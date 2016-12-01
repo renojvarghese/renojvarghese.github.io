@@ -1,0 +1,14 @@
+@mixin vendor($prop, $val) {
+
+	#{$prop}: $value;
+	-webkit-#{$prop}: $value;
+	-o-#{$prop}: $value;
+	-ms-#{$prop}: $value;
+	-moz-#{$prop}: $value;
+}
+
+$black: #000000;
+$white: #ffffff;
+$beige: #ffffe8;
+$light-purple: #a569ea;
+$dark-purple: #4e00a8;
