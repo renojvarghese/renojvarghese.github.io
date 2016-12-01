@@ -10,8 +10,8 @@
 $black: #000000;
 $white: #ffffff;
 $beige: #ffffe8;
-$light-purple: #a569ea;
-$dark-purple: #4e00a8;
+$light-purple: #4d16c8;
+$dark-purple: #380573;
 
 body {
 	overflow-x:hidden;
@@ -29,18 +29,43 @@ header {
 }
 .overlay-back{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,7db9e8+100&1+0,0+100 */
-background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,.5) 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,.5) 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,.5) 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
 	padding:0;
 	margin: 50px 0px;
 	float:left;
 }
-.overlay-back:hover a{
+.overlay-back {
+	position:relative;
+	display:block;
+	
+}
+.overlay-back:hover div{
 	opacity:.6;
+	transition: opacity .4s linear;
 }
 
+.overlay-text {
+	opacity:0;
+	width:100%;
+	position:absolute;
+	top:0%;
+	left:0;
+	padding:17%;
+	padding-bottom:0;
+	text-align:center;
+	box-sizing:border-box;
+	font-size:2.2vw;
+	color:$white;
+	transition: opacity .4s linear;
+	transition-delay: .1s;
+	
+}
+.overlay-back:hover .overlay-text {
+	opacity:1;
+}
 h1 {
 	color: $dark-purple
 }	
