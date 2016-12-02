@@ -74,7 +74,8 @@ h1 {
 
 .quote h2:hover {
   color: #21242D;
-  cursor: default; }
+  cursor: default;
+  z-index: 5; }
 
 .teamwork {
   font-size: 7vw;
