@@ -1,0 +1,47 @@
+.margin-top-100 {
+	margin-top:100px;
+}
+.margin-top-50 {
+	margin-top: 20px;
+}
+.margin-top-150 {
+	margin-top: 150px;
+}
+.text-contain {
+	position:relative;
+	@include vendor(transform, skewX(30deg));
+}
+.slant {
+	border-left: 2px solid $dark-purple;
+	background: $beige;
+	position:absolute;top:0;left:0;
+	
+	height:100%;
+	width:100%;
+	opacity:1;
+
+}
+.text-overlay {
+	@include vendor(transform, skewX(-30deg));
+	opacity:1;
+	position:absolute;
+	width:80%;
+	
+
+}
+@media (min-width: 992px) {
+	.text-contain {
+		right:10%;
+	}
+	.text-contain {
+
+	}
+	.slant {
+		padding: 150px 100px 200px 100px;
+	}
+	.text-overlay {
+		top:20%;
+		left:20%;
+	}
+
+}

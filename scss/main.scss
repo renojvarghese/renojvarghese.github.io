@@ -1,4 +1,4 @@
-@mixin vendor($prop, $val) {
+@mixin vendor($prop, $value) {
 
 	#{$prop}: $value;
 	-webkit-#{$prop}: $value;
@@ -7,26 +7,243 @@
 	-moz-#{$prop}: $value;
 }
 
-$black: #000000;
-$white: #ffffff;
-$beige: #ffffe8;
-$light-purple: #4d16c8;
-$dark-purple: #380573;
-
-body {
-	overflow-x:hidden;
-	background: $beige;
-	padding: 15px 0px 50px 0px;
+@mixin key( $name )
+{
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-o-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
 }
+
+$white: #ffffff;
+$light-grey: #CED4DD;
+$dark-grey: #A1ABC4;
+$red: #A10010;
+$black: #21242D;
+
+// .road:before, .road:after {
+// 	content:"";
+// 	display:block;
+// 	position:static;
+// 	width:90%;
+// 	height:2px;
+// 	background: $dark-purple;
+	
+// }
 img {
 	width:100%;
 }
-.margin-top-50, .overlay-back {
-	margin-top: 50px;
+address {
+	padding:10px 5% 10px 5%;
+	margin-bottom:0;
 }
-header {
-	padding:30px;
+address p {
+	padding-top:11px;
+	color:white
 }
+.no-point {
+	-webkit-touch-callout:default;
+    -webkit-user-select:text;
+    -moz-user-select:text;
+    -ms-user-select:text;
+    user-select:text;
+}
+.btn, .btn:focus {
+	position:relative;
+	padding: 5px 5px;
+	color: $light-grey;
+	text-align: center;
+	display:inline-block;
+	transition: all .4s ease-in;
+	transition-delay:.2s;
+	margin-top: 5px;
+
+}
+.btn::before {
+	content:"";
+	display:block;
+	position:absolute;
+	bottom:0;
+	left:30%;
+	width:0%;
+	height: 3px;
+	background: $light-grey;
+	transition: all .2s ease-in;
+}
+.btn:hover::before {
+	width:40%;
+}
+.btn:hover {
+	color: $light-grey;
+}
+.circle-after {
+	position:relative;
+}
+.circle-after::after {
+	content:"\25cf";
+	position:absolute;
+	right:0; top:30%;
+	color:$light-grey;
+
+}
+.contact-info {
+	background: $black;
+	border-bottom: 7px solid $dark-grey;
+	// background: -moz-linear-gradient(top, $black 0%, $black 60%, $white 100%); /* FF3.6-15 */
+	// background: -webkit-linear-gradient(top,  $black 0%, $black 60%, $white 100%); /* Chrome10-25,Safari5.1-6 */
+	// background: linear-gradient(to bottom, $black 0%, $black 20%, $white 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A10010', endColorstr='#21242D',GradientType=0 );
+	
+}
+
+.contact-info a,h4 {
+	color: $white;
+}
+
+h1 {
+	font-size: 5vw;
+}
+.quote {
+	position:relative;
+	padding-bottom: 80vh;
+}
+.quote h2 {
+	position:absolute;
+}
+
+
+.teamwork {
+	font-size: 7vw;
+	position:absolute;
+	top:40%;
+	left:35%;
+	color:$red;
+}
+.art {
+	font-size:5vw;
+	position: absolute;
+	top:20%;
+	right:30%;
+	color:$red;
+}
+.engr{
+	font-size:6vw;
+	color:$light-grey;
+	position:absolute;
+	top:35%;
+	right:13%;
+	transform:rotateZ(270deg);
+}
+.cosplay {
+	font-size:4vw;
+	color:$black;
+	bottom:0;
+	left:4%;
+}
+.dance {
+	font-size: 3vw;
+	color:$dark-grey;
+	position:absolute;
+	transform:rotateZ(90deg);
+	bottom: 5%;
+	left:0;
+
+}
+.curious {
+	font-size:5vw;
+	color:$red;
+	left:5%;
+	top:20%;
+}
+.kind {
+	font-size:7vw;
+	color:$dark-grey;
+	right:30%;
+	bottom:20%;
+}
+.web {
+	font-size:6vw;
+	color:$light-grey;
+	right:5%;
+	bottom:10%;
+}
+.ux {
+	font-size:4vw;
+	color:$light-grey;
+	top:50%;
+	left:10%;
+}
+.ui {
+	font-size:5vw;
+	color:$red;
+	transform: rotateZ(90deg);
+	top:20%;
+	left:40%;
+}
+.passionate {
+	font-size:6vw;
+	color:$red;
+	left:25%;
+	top:5%;
+
+}
+.creative {
+	font-size:8vw;
+	color:$light-grey;
+	right:50%;
+	bottom:30%;
+}
+.uconn {
+	font-size:6vw;
+	color:$light-grey;
+	left:10%;
+	bottom:10%;
+}
+.dm {
+	font-size: 5vw;
+	color:$dark-grey;
+	transform: rotateZ(90deg);
+	top:30%;
+	right:5%;
+}
+.tech {
+	font-size: 5vw;
+	color:$dark-grey;
+	transform: rotateZ(270deg);
+	top: 40%;
+	left:10%;
+}
+.grateful {
+	font-size:6vw;
+	color:$red;
+	right:5%;
+	bottom:40%;
+}
+.stem {
+	font-size: 4vw;
+	color:$light-grey;
+	top:5%;
+	right:5%;
+}
+.content:before {
+	content:"";
+	display:block;
+	position:static;
+	width:40%;
+	height:30px;;
+	background:$red;
+	margin-top:50px;
+	margin-bottom: 120px;
+}
+
 .overlay-back{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,7db9e8+100&1+0,0+100 */
 background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,.5) 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
@@ -58,25 +275,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	text-align:center;
 	box-sizing:border-box;
 	font-size:2.2vw;
-	color:$white;
+	color:white;
 	transition: opacity .4s linear;
 	transition-delay: .1s;
 	
 }
 .overlay-back:hover .overlay-text {
 	opacity:1;
-}
-h1 {
-	color: $dark-purple
-}	
-h2 {
-	color: $light-purple;
-	font-size:16px;
-}
-a {
-	color: $black;
-	text-decoration:none;
-}
-a:hover {
-	color: $dark-purple;
 }

@@ -1,16 +1,195 @@
-body {
-  overflow-x: hidden;
-  background: #ffffe8;
-  padding: 15px 0px 50px 0px; }
-
 img {
   width: 100%; }
 
-.margin-top-50, .overlay-back {
-  margin-top: 50px; }
+address {
+  padding: 10px 5% 10px 5%;
+  margin-bottom: 0; }
 
-header {
-  padding: 30px; }
+address p {
+  padding-top: 11px;
+  color: white; }
+
+.no-point {
+  -webkit-touch-callout: default;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text; }
+
+.btn, .btn:focus {
+  position: relative;
+  padding: 5px 5px;
+  color: #CED4DD;
+  text-align: center;
+  display: inline-block;
+  transition: all .4s ease-in;
+  transition-delay: .2s;
+  margin-top: 5px; }
+
+.btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  width: 0%;
+  height: 3px;
+  background: #CED4DD;
+  transition: all .2s ease-in; }
+
+.btn:hover::before {
+  width: 40%; }
+
+.btn:hover {
+  color: #CED4DD; }
+
+.circle-after {
+  position: relative; }
+
+.circle-after::after {
+  content: "\25cf";
+  position: absolute;
+  right: 0;
+  top: 30%;
+  color: #CED4DD; }
+
+.contact-info {
+  background: #21242D;
+  border-bottom: 7px solid #A1ABC4; }
+
+.contact-info a, h4 {
+  color: #ffffff; }
+
+h1 {
+  font-size: 5vw; }
+
+.quote {
+  position: relative;
+  padding-bottom: 80vh; }
+
+.quote h2 {
+  position: absolute; }
+
+.teamwork {
+  font-size: 7vw;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  color: #A10010; }
+
+.art {
+  font-size: 5vw;
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  color: #A10010; }
+
+.engr {
+  font-size: 6vw;
+  color: #CED4DD;
+  position: absolute;
+  top: 35%;
+  right: 13%;
+  transform: rotateZ(270deg); }
+
+.cosplay {
+  font-size: 4vw;
+  color: #21242D;
+  bottom: 0;
+  left: 4%; }
+
+.dance {
+  font-size: 3vw;
+  color: #A1ABC4;
+  position: absolute;
+  transform: rotateZ(90deg);
+  bottom: 5%;
+  left: 0; }
+
+.curious {
+  font-size: 5vw;
+  color: #A10010;
+  left: 5%;
+  top: 20%; }
+
+.kind {
+  font-size: 7vw;
+  color: #A1ABC4;
+  right: 30%;
+  bottom: 20%; }
+
+.web {
+  font-size: 6vw;
+  color: #CED4DD;
+  right: 5%;
+  bottom: 10%; }
+
+.ux {
+  font-size: 4vw;
+  color: #CED4DD;
+  top: 50%;
+  left: 10%; }
+
+.ui {
+  font-size: 5vw;
+  color: #A10010;
+  transform: rotateZ(90deg);
+  top: 20%;
+  left: 40%; }
+
+.passionate {
+  font-size: 6vw;
+  color: #A10010;
+  left: 25%;
+  top: 5%; }
+
+.creative {
+  font-size: 8vw;
+  color: #CED4DD;
+  right: 50%;
+  bottom: 30%; }
+
+.uconn {
+  font-size: 6vw;
+  color: #CED4DD;
+  left: 10%;
+  bottom: 10%; }
+
+.dm {
+  font-size: 5vw;
+  color: #A1ABC4;
+  transform: rotateZ(90deg);
+  top: 30%;
+  right: 5%; }
+
+.tech {
+  font-size: 5vw;
+  color: #A1ABC4;
+  transform: rotateZ(270deg);
+  top: 40%;
+  left: 10%; }
+
+.grateful {
+  font-size: 6vw;
+  color: #A10010;
+  right: 5%;
+  bottom: 40%; }
+
+.stem {
+  font-size: 4vw;
+  color: #CED4DD;
+  top: 5%;
+  right: 5%; }
+
+.content:before {
+  content: "";
+  display: block;
+  position: static;
+  width: 40%;
+  height: 30px;
+  background: #A10010;
+  margin-top: 50px;
+  margin-bottom: 120px; }
 
 .overlay-back {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,7db9e8+100&1+0,0+100 */
@@ -45,25 +224,11 @@ header {
   text-align: center;
   box-sizing: border-box;
   font-size: 2.2vw;
-  color: #ffffff;
+  color: white;
   transition: opacity .4s linear;
   transition-delay: .1s; }
 
 .overlay-back:hover .overlay-text {
   opacity: 1; }
-
-h1 {
-  color: #380573; }
-
-h2 {
-  color: #4d16c8;
-  font-size: 16px; }
-
-a {
-  color: #000000;
-  text-decoration: none; }
-
-a:hover {
-  color: #380573; }
 
 /*# sourceMappingURL=main.css.map */
