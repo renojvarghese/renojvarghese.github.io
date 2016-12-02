@@ -68,7 +68,13 @@ h1 {
   padding-bottom: 80vh; }
 
 .quote h2 {
-  position: absolute; }
+  position: absolute;
+  transition: color .3s ease-in;
+  cursor: default; }
+
+.quote h2:hover {
+  color: #21242D;
+  cursor: default; }
 
 .teamwork {
   font-size: 7vw;
@@ -94,7 +100,7 @@ h1 {
 
 .cosplay {
   font-size: 4vw;
-  color: #21242D;
+  color: #A1ABC4;
   bottom: 0;
   left: 4%; }
 

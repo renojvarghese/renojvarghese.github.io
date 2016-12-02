@@ -117,6 +117,12 @@ h1 {
 }
 .quote h2 {
 	position:absolute;
+	transition: color .3s ease-in;
+	cursor:default;
+}
+.quote h2:hover {
+	color:$black;
+	cursor:default;
 }
 
 
@@ -144,7 +150,7 @@ h1 {
 }
 .cosplay {
 	font-size:4vw;
-	color:$black;
+	color:$dark-grey;
 	bottom:0;
 	left:4%;
 }
