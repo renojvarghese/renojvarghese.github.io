@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i|Maven+Pro:400,700");
 img {
-  width: 100%; }
+  width: 100%;
+  transition: all .4s linear; }
 
 address {
   padding: 10px 5% 10px 5%;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-family: "Lato", Helvetica, sans-serif; }
 
 address p {
   padding-top: 11px;
@@ -82,14 +85,16 @@ h1 {
   position: absolute;
   top: 40%;
   left: 35%;
-  color: #A10010; }
+  color: #A10010;
+  font-family: "Lato", Helvetica, sans-serif; }
 
 .art {
   font-size: 5vw;
   position: absolute;
   top: 20%;
   right: 30%;
-  color: #A10010; }
+  color: #A10010;
+  font-family: "Maven Pro", Helvetica, sans-serif; }
 
 .engr {
   font-size: 6vw;
@@ -97,13 +102,15 @@ h1 {
   position: absolute;
   top: 35%;
   right: 13%;
-  transform: rotateZ(270deg); }
+  transform: rotateZ(270deg);
+  font-family: "Maven Pro", Helvetica, sans-serif; }
 
 .cosplay {
   font-size: 4vw;
   color: #A1ABC4;
   bottom: 0;
-  left: 4%; }
+  left: 4%;
+  font-family: "Maven Pro", Helvetica, sans-serif; }
 
 .dance {
   font-size: 3vw;
@@ -111,82 +118,95 @@ h1 {
   position: absolute;
   transform: rotateZ(90deg);
   bottom: 5%;
-  left: 0; }
+  left: 0;
+  font-family: "Lato", Helvetica, sans-serif; }
 
 .curious {
   font-size: 5vw;
   color: #A10010;
   left: 5%;
-  top: 20%; }
+  top: 20%;
+  font-family: "Maven Pro", Helvetica, sans-serif; }
 
 .kind {
   font-size: 7vw;
   color: #A1ABC4;
   right: 30%;
-  bottom: 20%; }
+  bottom: 20%;
+  font-family: "Maven Pro", Helvetica, sans-serif; }
 
 .web {
   font-size: 6vw;
   color: #CED4DD;
   right: 5%;
-  bottom: 10%; }
+  bottom: 10%;
+  font-family: "Lato", Helvetica, sans-serif; }
 
 .ux {
   font-size: 4vw;
   color: #CED4DD;
   top: 50%;
-  left: 10%; }
+  left: 10%;
+  font-family: "Maven Pro", Helvetica, sans-serif; }
 
 .ui {
   font-size: 5vw;
   color: #A10010;
   transform: rotateZ(90deg);
   top: 20%;
-  left: 40%; }
+  left: 40%;
+  font-family: "Lato", Helvetica, sans-serif; }
 
 .passionate {
   font-size: 6vw;
   color: #A10010;
   left: 25%;
-  top: 5%; }
+  top: 5%;
+  font-family: "Lato", Helvetica, sans-serif; }
 
 .creative {
   font-size: 8vw;
   color: #CED4DD;
   right: 50%;
-  bottom: 30%; }
+  bottom: 30%;
+  font-family: "Maven Pro", Helvetica, sans-serif; }
 
 .uconn {
   font-size: 6vw;
   color: #CED4DD;
   left: 10%;
-  bottom: 10%; }
+  bottom: 10%;
+  font-family: "Maven Pro", Helvetica, sans-serif; }
 
 .dm {
   font-size: 5vw;
   color: #A1ABC4;
   transform: rotateZ(90deg);
   top: 30%;
-  right: 5%; }
+  right: 5%;
+  font-family: "Lato", Helvetica, sans-serif; }
 
 .tech {
   font-size: 5vw;
   color: #A1ABC4;
   transform: rotateZ(270deg);
   top: 40%;
-  left: 10%; }
+  left: 10%;
+  font-family: "Maven Pro", Helvetica, sans-serif; }
 
 .grateful {
   font-size: 6vw;
   color: #A10010;
   right: 5%;
-  bottom: 40%; }
+  bottom: 40%;
+  font-family: "Lato", Helvetica, sans-serif; }
 
 .stem {
   font-size: 4vw;
   color: #CED4DD;
   top: 5%;
-  right: 5%; }
+  right: 5%;
+  font-family: "Lato", Helvetica, sans-serif; }
 
 .content:before {
   content: "";
@@ -199,25 +219,27 @@ h1 {
   margin-bottom: 120px; }
 
 .overlay-back {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,7db9e8+100&1+0,0+100 */
-  background: -moz-linear-gradient(top, black 0%, black 25%, rgba(0, 0, 0, 0.5) 50%, black 75%, black 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, black 0%, black 25%, rgba(0, 0, 0, 0.5) 50%, black 75%, black 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, black 0%, black 25%, rgba(0, 0, 0, 0.5) 50%, black 75%, black 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#007db9e8',GradientType=0 );
-  /* IE6-9 */
-  padding: 0;
   margin: 50px 0px;
   float: left; }
+
+.overlay-back.red {
+  background: #A10010; }
+
+.overlay-back.dark-grey {
+  background: #A1ABC4; }
+
+.overlay-back.light-grey {
+  background: #CED4DD; }
+
+.overlay-back.black {
+  background: #21242D; }
 
 .overlay-back {
   position: relative;
   display: block; }
 
 .overlay-back:hover div {
-  opacity: .6;
+  opacity: 0;
   transition: opacity .4s linear; }
 
 .overlay-text {
@@ -237,5 +259,43 @@ h1 {
 
 .overlay-back:hover .overlay-text {
   opacity: 1; }
+
+.remove-space {
+  margin: 0;
+  padding: 0; }
+
+.secret-santa {
+  position: relative;
+  margin-top: 100px; }
+  .secret-santa h2 {
+    font-family: "Maven Pro", Helvetica, sans-serif;
+    color: #A1ABC4; }
+  .secret-santa h3 {
+    font-family: "Lato", Helvetica, sans-serif;
+    font-style: italic;
+    color: #A10010; }
+  .secret-santa p {
+    padding: 20px 20px 0px 15px;
+    font-family: "Lato", Helvetica, sans-serif;
+    letter-spacing: .7px; }
+  .secret-santa .text-contiain::before {
+    content: "";
+    display: block;
+    background: #A10010;
+    position: absolute;
+    height: 100px;
+    width: 30px;
+    top: 0;
+    left: -15px; }
+
+.secret-santa::before {
+  content: "";
+  display: block;
+  background: #A10010;
+  position: absolute;
+  height: 60%;
+  width: 3px;
+  top: 20%;
+  left: 47.5%; }
 
 /*# sourceMappingURL=main.css.map */

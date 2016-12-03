@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i|Maven+Pro:400,700');
 @mixin vendor($prop, $value) {
 
 	#{$prop}: $value;
@@ -28,7 +29,8 @@ $light-grey: #CED4DD;
 $dark-grey: #A1ABC4;
 $red: #A10010;
 $black: #21242D;
-
+$lato: 'Lato', Helvetica, sans-serif;
+$pro:'Maven Pro', Helvetica, sans-serif;
 // .road:before, .road:after {
 // 	content:"";
 // 	display:block;
@@ -40,14 +42,16 @@ $black: #21242D;
 // }
 img {
 	width:100%;
+	transition:all .4s linear;
 }
 address {
 	padding:10px 5% 10px 5%;
 	margin-bottom:0;
+	font-family: $lato;
 }
 address p {
 	padding-top:11px;
-	color:white
+	color:white;
 }
 .no-point {
 	-webkit-touch-callout:default;
@@ -133,6 +137,7 @@ h1 {
 	top:40%;
 	left:35%;
 	color:$red;
+	font-family: $lato;
 }
 .art {
 	font-size:5vw;
@@ -140,6 +145,7 @@ h1 {
 	top:20%;
 	right:30%;
 	color:$red;
+	font-family: $pro;
 }
 .engr{
 	font-size:6vw;
@@ -148,12 +154,14 @@ h1 {
 	top:35%;
 	right:13%;
 	transform:rotateZ(270deg);
+	font-family: $pro;
 }
 .cosplay {
 	font-size:4vw;
 	color:$dark-grey;
 	bottom:0;
 	left:4%;
+	font-family: $pro;
 }
 .dance {
 	font-size: 3vw;
@@ -162,6 +170,7 @@ h1 {
 	transform:rotateZ(90deg);
 	bottom: 5%;
 	left:0;
+	font-family: $lato;
 
 }
 .curious {
@@ -169,24 +178,28 @@ h1 {
 	color:$red;
 	left:5%;
 	top:20%;
+	font-family: $pro;
 }
 .kind {
 	font-size:7vw;
 	color:$dark-grey;
 	right:30%;
 	bottom:20%;
+	font-family: $pro;
 }
 .web {
 	font-size:6vw;
 	color:$light-grey;
 	right:5%;
 	bottom:10%;
+	font-family: $lato;
 }
 .ux {
 	font-size:4vw;
 	color:$light-grey;
 	top:50%;
 	left:10%;
+	font-family: $pro;
 }
 .ui {
 	font-size:5vw;
@@ -194,12 +207,14 @@ h1 {
 	transform: rotateZ(90deg);
 	top:20%;
 	left:40%;
+	font-family: $lato;
 }
 .passionate {
 	font-size:6vw;
 	color:$red;
 	left:25%;
 	top:5%;
+	font-family: $lato;
 
 }
 .creative {
@@ -207,12 +222,14 @@ h1 {
 	color:$light-grey;
 	right:50%;
 	bottom:30%;
+	font-family: $pro;
 }
 .uconn {
 	font-size:6vw;
 	color:$light-grey;
 	left:10%;
 	bottom:10%;
+	font-family: $pro;
 }
 .dm {
 	font-size: 5vw;
@@ -220,6 +237,7 @@ h1 {
 	transform: rotateZ(90deg);
 	top:30%;
 	right:5%;
+	font-family: $lato;
 }
 .tech {
 	font-size: 5vw;
@@ -227,18 +245,21 @@ h1 {
 	transform: rotateZ(270deg);
 	top: 40%;
 	left:10%;
+	font-family: $pro;
 }
 .grateful {
 	font-size:6vw;
 	color:$red;
 	right:5%;
 	bottom:40%;
+	font-family: $lato;
 }
 .stem {
 	font-size: 4vw;
 	color:$light-grey;
 	top:5%;
 	right:5%;
+	font-family: $lato;
 }
 .content:before {
 	content:"";
@@ -252,25 +273,33 @@ h1 {
 }
 
 .overlay-back{
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,7db9e8+100&1+0,0+100 */
-background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,.5) 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,.5) 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,.5) 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
-	padding:0;
 	margin: 50px 0px;
 	float:left;
+}
+.overlay-back.red {
+	background:$red;
+}
+.overlay-back.dark-grey {
+	background: $dark-grey;
+}
+.overlay-back.light-grey {
+	background: $light-grey;
+}
+.overlay-back.black {
+	background: $black;
 }
 .overlay-back {
 	position:relative;
 	display:block;
 	
 }
+.line-left {
+
+}
 .overlay-back:hover div{
-	opacity:.6;
+	opacity:0;
 	transition: opacity .4s linear;
 }
-
 .overlay-text {
 	opacity:0;
 	width:100%;
@@ -290,3 +319,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .overlay-back:hover .overlay-text {
 	opacity:1;
 }
+.remove-space {
+	margin:0;
+	padding:0;
+}
+@import "project"
