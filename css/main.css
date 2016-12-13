@@ -164,6 +164,14 @@ h1 {
   top: 5%;
   font-family: "Lato", Helvetica, sans-serif; }
 
+.compassionate {
+  font-size: 3vw;
+  color: #CED4DD;
+  left: 42%;
+  top: 20%;
+  font-family: "Lato", Helvetica, sans-serif;
+  transform: rotateZ(270deg); }
+
 .creative {
   font-size: 8vw;
   color: #CED4DD;
@@ -207,6 +215,19 @@ h1 {
   top: 5%;
   right: 5%;
   font-family: "Lato", Helvetica, sans-serif; }
+
+.bravery {
+  font-size: 3vw;
+  top: 20%;
+  left: 4%;
+  transform: rotateZ(90deg);
+  color: #A1ABC4; }
+
+.patient {
+  font-size: 5vw;
+  top: 80%;
+  left: 60%;
+  color: #A1ABC4; }
 
 .content:before {
   content: "";
@@ -278,24 +299,24 @@ h1 {
     padding: 20px 20px 0px 15px;
     font-family: "Lato", Helvetica, sans-serif;
     letter-spacing: .7px; }
-  .secret-santa .text-contiain::before {
+  .secret-santa .text-contain::before {
     content: "";
     display: block;
     background: #A10010;
     position: absolute;
-    height: 100px;
-    width: 30px;
-    top: 0;
-    left: -15px; }
+    height: 80%;
+    width: 3px;
+    top: 10%;
+    left: -30px; }
 
-.secret-santa::before {
-  content: "";
-  display: block;
-  background: #A10010;
-  position: absolute;
-  height: 60%;
-  width: 3px;
-  top: 20%;
-  left: 47.5%; }
+.text-contain {
+  padding-left: 12%; }
+
+@media screen and (min-width: 992px) {
+  .secret-santa::before {
+    width: 3px; }
+
+  .text-contain {
+    padding-left: 0; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -217,6 +217,15 @@ h1 {
 	font-family: $lato;
 
 }
+.compassionate {
+	font-size:3vw;
+	color:$light-grey;
+	left:42%;
+	top:20%;
+	font-family: $lato;
+	transform: rotateZ(270deg);
+
+}
 .creative {
 	font-size:8vw;
 	color:$light-grey;
@@ -261,6 +270,20 @@ h1 {
 	right:5%;
 	font-family: $lato;
 }
+.bravery {
+	font-size: 3vw;
+	top:20%;
+	left:4%;
+	transform: rotateZ(90deg);
+	color:$dark-grey;
+}
+.patient {
+	font-size: 5vw;
+	top: 80%;
+	left: 60%;
+	color:$dark-grey;
+}
+
 .content:before {
 	content:"";
 	display:block;
@@ -323,4 +346,4 @@ h1 {
 	margin:0;
 	padding:0;
 }
-@import "project"
+@import "project";
