@@ -23,16 +23,19 @@
         @content;
     }
 }
+@mixin rotaZ($val) {
+	transform: rotateZ($val);
+}
 
 $white: #ffffff;
 $light-grey: #CED4DD;
 
 
-$main: #7F322F;
-$accent-light: #CC504B;
-$accent-mid: #956563;
-$accent-dark: #4C1E1C;
-$highlight: #CC8B88;
+$main: #7F5838;
+$accent-light: #CCAF97;
+$accent-mid: #CC8C5A;
+$accent-dark: #4C3522;
+$highlight: #957F6E;
 
 
 
@@ -62,6 +65,23 @@ html, .container-fluid{
 .row {
 	width:100%;
 	margin: 0;
+}
+@include key(fall) {
+	0% {
+		top: -40px;
+		opacity: 0;
+	}
+	40% {
+		opacity: .3;
+	}
+	100% {
+		top: 0px;
+		opacity: 1;
+	}
+}
+.fall,.contact-info {
+	position:relative;
+	@include vendor(animation, fall 1.4s ease-out 1 forwards)
 }
 .contact-info {
 	background: $accent-dark;
@@ -132,7 +152,8 @@ address p {
 }
 .quote h2 {
 	position:absolute;
-	transition: color .3s ease-in;
+	transition: all .5s ease-in;
+
 	cursor:default;
 }
 .quote h2:hover {
@@ -140,6 +161,7 @@ address p {
 	cursor:default;
 	z-index: 5;
 }
+
 
 
 .teamwork {
@@ -150,6 +172,9 @@ address p {
 	color:$accent-mid;
 	font-family: $raleway;
 }
+.teamwork.clicked {
+	@include rotaZ(45deg);
+}
 .art {
 	font-size:5vw;
 	position: absolute;
@@ -157,6 +182,9 @@ address p {
 	right:30%;
 	color:$accent-dark;
 	font-family: $exo;
+}
+.art.clicked {
+	@include rotaZ(135deg);
 }
 .engr{
 	font-size:6vw;
@@ -167,12 +195,18 @@ address p {
 	transform:rotateZ(270deg);
 	font-family: $exo;
 }
+.engr.clicked {
+	@include rotaZ(360deg);
+}
 .cosplay {
 	font-size:4vw;
 	color:$accent-dark;
 	bottom:0;
 	left:4%;
 	font-family: $exo;
+}
+.cosplay.clicked {
+	@include rotaZ(270deg);
 }
 .dance {
 	font-size: 3vw;
@@ -184,12 +218,18 @@ address p {
 	font-family: $raleway;
 
 }
+.dance.clicked {
+	@include rotaZ(135deg);
+}
 .curious {
 	font-size:5vw;
 	color:$main;
 	left:5%;
 	top:20%;
 	font-family: $exo;
+}
+.curious.clicked {
+	@include rotaZ(60deg);
 }
 .kind {
 	font-size:7vw;
@@ -198,12 +238,18 @@ address p {
 	bottom:20%;
 	font-family: $exo;
 }
+.kind.clicked {
+	@include rotaZ(35deg);
+}
 .web {
 	font-size:6vw;
 	color:$accent-light;
 	right:5%;
 	bottom:10%;
 	font-family: $raleway;
+}
+.web.clicked {
+	@include rotaZ(165deg);
 }
 .ux {
 	font-size:4vw;
@@ -212,13 +258,19 @@ address p {
 	left:10%;
 	font-family: $exo;
 }
+.ux.clicked {
+	@include rotaZ(90deg);
+}
 .ui {
 	font-size:5vw;
-	color:$accent-mid;
+	color:$accent-dark;
 	transform: rotateZ(90deg);
 	top:20%;
 	left:40%;
 	font-family: $raleway;
+}
+.ui.clicked {
+	@include rotaZ(135deg);
 }
 .passionate {
 	font-size:6vw;
@@ -227,6 +279,9 @@ address p {
 	top:5%;
 	font-family: $raleway;
 
+}
+.passionate.clicked {
+	@include rotaZ(-45deg);
 }
 .compassionate {
 	font-size:3vw;
@@ -237,6 +292,9 @@ address p {
 	transform: rotateZ(270deg);
 
 }
+.compassionate.clicked {
+	@include rotaZ(0deg);
+}
 .creative {
 	font-size:8vw;
 	color:$accent-light;
@@ -244,12 +302,18 @@ address p {
 	bottom:30%;
 	font-family: $exo;
 }
+.creative.clicked {
+	@include rotaZ(-90deg);
+}
 .uconn {
 	font-size:6vw;
 	color:$accent-light;
 	left:10%;
 	bottom:10%;
 	font-family: $exo;
+}
+.uconn.clicked {
+	@include rotaZ(-145deg);
 }
 .dm {
 	font-size: 5vw;
@@ -259,6 +323,9 @@ address p {
 	right:5%;
 	font-family: $raleway;
 }
+.dm.clicked {
+	@include rotaZ(20deg);
+}
 .tech {
 	font-size: 5vw;
 	color:$main;
@@ -267,12 +334,18 @@ address p {
 	left:10%;
 	font-family: $exo;
 }
+.tech.clicked {
+	@include rotaZ(110deg);
+}
 .grateful {
 	font-size:6vw;
 	color:$accent-mid;
 	right:5%;
 	bottom:40%;
 	font-family: $raleway;
+}
+.grateful.clicked {
+	@include rotaZ(-60deg);
 }
 .stem {
 	font-size: 4vw;
@@ -281,6 +354,9 @@ address p {
 	right:5%;
 	font-family: $raleway;
 }
+.stem.clicked {
+	@include rotaZ(100deg);
+}
 .bravery {
 	font-size: 3vw;
 	top:20%;
@@ -288,11 +364,17 @@ address p {
 	transform: rotateZ(90deg);
 	color:$main;
 }
+.bravery.clicked {
+	@include rotaZ(20deg);
+}
 .patient {
 	font-size: 5vw;
 	top: 80%;
 	left: 60%;
 	color:$main;
+}
+.patient.clicked {
+	@include rotaZ(-30deg);
 }
 
 .content:before {
@@ -305,6 +387,7 @@ address p {
 	margin-top:50px;
 	margin-bottom: 120px;
 }
+
 .line:before {
 	content:"";
 	display:block;
@@ -393,7 +476,7 @@ h2, .fade{
 	text-align:center;
 	box-sizing:border-box;
 	font-size:2.2vw;
-	color:$highlight;
+	color:$white;
 	transition: opacity .4s linear;
 	transition-delay: .1s;
 	font-family:$exo;
