@@ -1,26 +1,34 @@
 
-.secret-santa {
+.project{
 	position:relative;
 	margin-top: 100px;
 	h2 {
-		font-family: $pro;
-		color:$dark-grey;
+		font-family: $exo;
+		color:$accent-dark;
 	}
 	h3 {
-		font-family: $lato;
+		font-family: $raleway;
 		font-style: italic;
-		color:$red;
+		color:$accent-light;
 	}
 	p {
 		padding: 20px 20px 0px 15px;
-		font-family: $lato;
+		font-family: $raleway;
 		letter-spacing: .7px;
+	}
+	a, a:focus {
+	color: $main;
+	transition: .2s all linear;
+}
+	a:hover {
+		color: $accent-light;
+		text-decoration: none;
 	}
 
 	.text-contain::before {
 	content:"";
 	display:block;
-	background:$red;
+	background:$main;
 	position:absolute;
 	height:80%;
 	width:3px;
@@ -34,19 +42,9 @@
 		padding-left:12%;
 }
 
-// .secret-santa::before {
-// 	content:"";
-// 	display:block;
-// 	background:$red;
-// 	position:absolute;
-// 	height:60%;
-// 	width:0px;
-	
-// 	top:20%;
-// 	left: 47.5%;
-// }
+
 @media screen and (min-width:992px) {
-	.secret-santa::before {
+	.project::before {
 		width: 3px;
 	}
 	.text-contain {

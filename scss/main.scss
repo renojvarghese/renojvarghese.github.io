@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i|Maven+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Exo:300|Raleway:400');
 @mixin vendor($prop, $value) {
 
 	#{$prop}: $value;
@@ -26,11 +26,18 @@
 
 $white: #ffffff;
 $light-grey: #CED4DD;
-$dark-grey: #A1ABC4;
-$red: #A10010;
-$black: #21242D;
-$lato: 'Lato', Helvetica, sans-serif;
-$pro:'Maven Pro', Helvetica, sans-serif;
+
+
+$main: #7F322F;
+$accent-light: #CC504B;
+$accent-mid: #956563;
+$accent-dark: #4C1E1C;
+$highlight: #CC8B88;
+
+
+
+$raleway: 'Raleway', Helvetica, sans-serif;
+$exo:'Exo', Helvetica, sans-serif;
 // .road:before, .road:after {
 // 	content:"";
 // 	display:block;
@@ -40,14 +47,34 @@ $pro:'Maven Pro', Helvetica, sans-serif;
 // 	background: $dark-purple;
 	
 // }
-img {
+body {
+	margin-bottom: 100px;
+	
+}
+img,picture {
 	width:100%;
 	transition:all .4s linear;
 }
-address {
+html, .container-fluid{
+	padding-left:0;
+	padding-right:0;
+}
+.row {
+	width:100%;
+	margin: 0;
+}
+.contact-info {
+	background: $accent-dark;
+	border-bottom: 7px solid $main;
 	padding:10px 5% 10px 5%;
-	margin-bottom:0;
-	font-family: $lato;
+	margin:0;
+	width: 100%;
+	font-family: $raleway;
+	a {
+		float:left !important;
+		display: inline-block !important;
+	}
+
 }
 address p {
 	padding-top:11px;
@@ -62,13 +89,14 @@ address p {
 }
 .btn, .btn:focus {
 	position:relative;
-	padding: 5px 5px;
-	color: $light-grey;
+	padding: 5px 0px;
+	color: $white;
 	text-align: center;
 	display:inline-block;
 	transition: all .4s ease-in;
 	transition-delay:.2s;
 	margin-top: 5px;
+	margin-left:30px;
 
 }
 .btn::before {
@@ -76,44 +104,27 @@ address p {
 	display:block;
 	position:absolute;
 	bottom:0;
-	left:30%;
+	left:0%;
 	width:0%;
 	height: 3px;
-	background: $light-grey;
+	background: $highlight;
 	transition: all .2s ease-in;
 }
 .btn:hover::before {
-	width:40%;
+	width:80%;
 }
 .btn:hover {
-	color: $light-grey;
+	color: $highlight;
 }
 .circle-after {
 	position:relative;
 }
-.circle-after::after {
+.circle-after::before {
 	content:"\25cf";
 	position:absolute;
-	right:0; top:30%;
+	left:0; top:30%;
 	color:$light-grey;
 
-}
-.contact-info {
-	background: $black;
-	border-bottom: 7px solid $dark-grey;
-	// background: -moz-linear-gradient(top, $black 0%, $black 60%, $white 100%); /* FF3.6-15 */
-	// background: -webkit-linear-gradient(top,  $black 0%, $black 60%, $white 100%); /* Chrome10-25,Safari5.1-6 */
-	// background: linear-gradient(to bottom, $black 0%, $black 20%, $white 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A10010', endColorstr='#21242D',GradientType=0 );
-	
-}
-
-.contact-info a,h4 {
-	color: $white;
-}
-
-h1 {
-	font-size: 5vw;
 }
 .quote {
 	position:relative;
@@ -125,7 +136,7 @@ h1 {
 	cursor:default;
 }
 .quote h2:hover {
-	color:$black;
+	color:black;
 	cursor:default;
 	z-index: 5;
 }
@@ -136,152 +147,152 @@ h1 {
 	position:absolute;
 	top:40%;
 	left:35%;
-	color:$red;
-	font-family: $lato;
+	color:$accent-mid;
+	font-family: $raleway;
 }
 .art {
 	font-size:5vw;
 	position: absolute;
 	top:20%;
 	right:30%;
-	color:$red;
-	font-family: $pro;
+	color:$accent-dark;
+	font-family: $exo;
 }
 .engr{
 	font-size:6vw;
-	color:$light-grey;
+	color:$accent-light;
 	position:absolute;
 	top:35%;
 	right:13%;
 	transform:rotateZ(270deg);
-	font-family: $pro;
+	font-family: $exo;
 }
 .cosplay {
 	font-size:4vw;
-	color:$dark-grey;
+	color:$accent-dark;
 	bottom:0;
 	left:4%;
-	font-family: $pro;
+	font-family: $exo;
 }
 .dance {
 	font-size: 3vw;
-	color:$dark-grey;
+	color:$accent-light;
 	position:absolute;
 	transform:rotateZ(90deg);
 	bottom: 5%;
 	left:0;
-	font-family: $lato;
+	font-family: $raleway;
 
 }
 .curious {
 	font-size:5vw;
-	color:$red;
+	color:$main;
 	left:5%;
 	top:20%;
-	font-family: $pro;
+	font-family: $exo;
 }
 .kind {
 	font-size:7vw;
-	color:$dark-grey;
+	color:$main;
 	right:30%;
 	bottom:20%;
-	font-family: $pro;
+	font-family: $exo;
 }
 .web {
 	font-size:6vw;
-	color:$light-grey;
+	color:$accent-light;
 	right:5%;
 	bottom:10%;
-	font-family: $lato;
+	font-family: $raleway;
 }
 .ux {
 	font-size:4vw;
-	color:$light-grey;
+	color:$accent-light;
 	top:50%;
 	left:10%;
-	font-family: $pro;
+	font-family: $exo;
 }
 .ui {
 	font-size:5vw;
-	color:$red;
+	color:$accent-mid;
 	transform: rotateZ(90deg);
 	top:20%;
 	left:40%;
-	font-family: $lato;
+	font-family: $raleway;
 }
 .passionate {
 	font-size:6vw;
-	color:$red;
+	color:$accent-mid;
 	left:25%;
 	top:5%;
-	font-family: $lato;
+	font-family: $raleway;
 
 }
 .compassionate {
 	font-size:3vw;
-	color:$light-grey;
+	color:$accent-dark;
 	left:42%;
 	top:20%;
-	font-family: $lato;
+	font-family: $raleway;
 	transform: rotateZ(270deg);
 
 }
 .creative {
 	font-size:8vw;
-	color:$light-grey;
+	color:$accent-light;
 	right:50%;
 	bottom:30%;
-	font-family: $pro;
+	font-family: $exo;
 }
 .uconn {
 	font-size:6vw;
-	color:$light-grey;
+	color:$accent-light;
 	left:10%;
 	bottom:10%;
-	font-family: $pro;
+	font-family: $exo;
 }
 .dm {
 	font-size: 5vw;
-	color:$dark-grey;
+	color:$accent-dark;
 	transform: rotateZ(90deg);
 	top:30%;
 	right:5%;
-	font-family: $lato;
+	font-family: $raleway;
 }
 .tech {
 	font-size: 5vw;
-	color:$dark-grey;
+	color:$main;
 	transform: rotateZ(270deg);
 	top: 40%;
 	left:10%;
-	font-family: $pro;
+	font-family: $exo;
 }
 .grateful {
 	font-size:6vw;
-	color:$red;
+	color:$accent-mid;
 	right:5%;
 	bottom:40%;
-	font-family: $lato;
+	font-family: $raleway;
 }
 .stem {
 	font-size: 4vw;
-	color:$light-grey;
+	color:$accent-mid;
 	top:5%;
 	right:5%;
-	font-family: $lato;
+	font-family: $raleway;
 }
 .bravery {
 	font-size: 3vw;
 	top:20%;
 	left:4%;
 	transform: rotateZ(90deg);
-	color:$dark-grey;
+	color:$main;
 }
 .patient {
 	font-size: 5vw;
 	top: 80%;
 	left: 60%;
-	color:$dark-grey;
+	color:$main;
 }
 
 .content:before {
@@ -290,30 +301,78 @@ h1 {
 	position:static;
 	width:40%;
 	height:30px;;
-	background:$red;
+	background:$main;
 	margin-top:50px;
 	margin-bottom: 120px;
 }
+.line:before {
+	content:"";
+	display:block;
+	position:static;
+	height:3px;
+	background:$highlight;
+	margin:5px;
+}
+.wave1 {
+	animation-delay: .5s;
+}
+.wave2 {
+	animation-delay: .8s !important;
+}
+.wave3 {
+	animation-delay: 1.0s !important;
+}
+.wave4 {
+	animation-delay: 1.5s !important;
+}
 
+@include key(fade-in) {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+h2, .fade{
+	 opacity: 0;
+	 @include vendor(animation, fade-in .8s linear 1 forwards)
+	 // animation: fade-in 5s linear 2s infinite forward;
+	 // -webkit-animation: fade-in 5s linear 2s infinite alternate;
+}
 .overlay-back{
-	margin: 50px 0px;
+	margin: 10px 0px;
 	float:left;
 }
+@media screen and (max-width:991px) {
+	.overlay-back{
+	max-height: 35vh;
+	overflow-y:hidden;
+	padding:0 !important;;
+	margin:0;
+	}
+}
 .overlay-back.red {
-	background:$red;
+	background:$main;
+	border-top:4px solid $accent-light;
 }
 .overlay-back.dark-grey {
-	background: $dark-grey;
+	background: $accent-dark;
+	border-bottom:4px solid $accent-mid;
 }
 .overlay-back.light-grey {
-	background: $light-grey;
+	background: $accent-mid;
+	border-bottom:4px solid $accent-dark;
+
 }
 .overlay-back.black {
-	background: $black;
+	background: $accent-light;
+	border-top:4px solid $main;
 }
 .overlay-back {
 	position:relative;
 	display:block;
+	
 	
 }
 .line-left {
@@ -334,9 +393,10 @@ h1 {
 	text-align:center;
 	box-sizing:border-box;
 	font-size:2.2vw;
-	color:white;
+	color:$highlight;
 	transition: opacity .4s linear;
 	transition-delay: .1s;
+	font-family:$exo;
 	
 }
 .overlay-back:hover .overlay-text {
@@ -345,5 +405,13 @@ h1 {
 .remove-space {
 	margin:0;
 	padding:0;
+}
+@media screen and (min-width: 992px) {
+	.md-pull-up {
+		margin-top: -25vh;
+	}
+	.md-pull-down {
+		margin-top: 50px;
+	}
 }
 @import "project";
