@@ -116,7 +116,7 @@ address p {
   position: absolute;
   left: 0;
   top: 30%;
-  color: #CED4DD; }
+  color: #CCAF97; }
 
 .quote {
   position: relative;
@@ -456,6 +456,9 @@ h2, .fade {
   margin: 0;
   padding: 0; }
 
+.italics {
+  font-style: italic; }
+
 @media screen and (min-width: 992px) {
   .md-pull-up {
     margin-top: -25vh; }
@@ -501,5 +504,30 @@ h2, .fade {
 
   .text-contain {
     padding-left: 0; } }
+.modal-backdrop.in {
+  background: rgba(155, 155, 155, 0.4); }
+
+.modal-dialog {
+  width: 80%;
+  margin: 0 auto; }
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus {
+  padding: 8px 10px 10px 10px;
+  background: #4C3522; }
+
+.btn-primary::before {
+  display: none; }
+
+.border-top {
+  border-top: 2px solid #CCAF97; }
+
+.icon {
+  width: 10%;
+  width: 5vw;
+  margin-right: 15px; }
+
+@media screen and (min-width: 998px) {
+  .icon {
+    width: 2.5vw; } }
 
 /*# sourceMappingURL=main.css.map */

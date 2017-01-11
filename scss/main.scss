@@ -28,13 +28,13 @@
 }
 
 $white: #ffffff;
-$light-grey: #CED4DD;
+
 
 
 $main: #7F5838;
 $accent-light: #CCAF97;
-$accent-mid: #CC8C5A;
 $accent-dark: #4C3522;
+$accent-mid: #CC8C5A;
 $highlight: #957F6E;
 
 
@@ -143,7 +143,7 @@ address p {
 	content:"\25cf";
 	position:absolute;
 	left:0; top:30%;
-	color:$light-grey;
+	color:$accent-light;
 
 }
 .quote {
@@ -489,6 +489,9 @@ h2, .fade{
 	margin:0;
 	padding:0;
 }
+.italics {
+	font-style:italic;
+}
 @media screen and (min-width: 992px) {
 	.md-pull-up {
 		margin-top: -25vh;
@@ -497,4 +500,5 @@ h2, .fade{
 		margin-top: 50px;
 	}
 }
+
 @import "project";
