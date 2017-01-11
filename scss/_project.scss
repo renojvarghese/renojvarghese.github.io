@@ -71,7 +71,10 @@
 
 .icon {
 	width:10%;
-	width:5vw; margin-right: 15px;
+	width:5vw; 
+	padding-right: 5px;
+	border-right: 1px solid $highlight;
+	margin-right: 10px;
 }
 @media screen and (min-width: 998px) {
 	.icon {

@@ -50,13 +50,15 @@ html, .container-fluid {
   100% {
     top: 0px;
     opacity: 1; } }
-.fall, .contact-info {
+.falls, .contact-info {
+  top: -40px;
+  opacity: 0;
   position: relative;
-  animation: fall 1.4s ease-out 1 forwards;
-  -webkit-animation: fall 1.4s ease-out 1 forwards;
-  -o-animation: fall 1.4s ease-out 1 forwards;
-  -ms-animation: fall 1.4s ease-out 1 forwards;
-  -moz-animation: fall 1.4s ease-out 1 forwards; }
+  animation: fall 1.5s ease-out 1s forwards;
+  -webkit-animation: fall 1.5s ease-out 1s forwards;
+  -o-animation: fall 1.5s ease-out 1s forwards;
+  -ms-animation: fall 1.5s ease-out 1s forwards;
+  -moz-animation: fall 1.5s ease-out 1s forwards; }
 
 .contact-info {
   background: #4C3522;
@@ -524,7 +526,9 @@ h2, .fade {
 .icon {
   width: 10%;
   width: 5vw;
-  margin-right: 15px; }
+  padding-right: 5px;
+  border-right: 1px solid #957F6E;
+  margin-right: 10px; }
 
 @media screen and (min-width: 998px) {
   .icon {

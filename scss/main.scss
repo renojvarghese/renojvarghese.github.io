@@ -79,9 +79,11 @@ html, .container-fluid{
 		opacity: 1;
 	}
 }
-.fall,.contact-info {
+.falls,.contact-info {
+	top:-40px;
+	opacity:0;
 	position:relative;
-	@include vendor(animation, fall 1.4s ease-out 1 forwards)
+	@include vendor(animation, fall 1.5s ease-out 1.0s forwards)
 }
 .contact-info {
 	background: $accent-dark;
