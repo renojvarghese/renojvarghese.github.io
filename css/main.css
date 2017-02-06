@@ -512,7 +512,18 @@ h2, .fade {
     margin-top: -25vh; }
 
   .md-pull-down {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+
+  .line-after-mid::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #957F6E;
+    height: 4px;
+    width: 80%;
+    bottom: -35px;
+    left: 10%;
+    margin: 0 auto; } }
 .project {
   position: relative;
   margin-top: 100px; }

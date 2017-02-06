@@ -434,6 +434,7 @@ address p {
 	background:$highlight;
 	margin:5px;
 }
+
 .wave1 {
 	animation-delay: .5s;
 }
@@ -545,6 +546,18 @@ h2, .fade{
 	}
 	.md-pull-down {
 		margin-top: 50px;
+	}
+	.line-after-mid::after {
+		content:"";
+		display: block;
+		position: absolute;
+		background: $highlight;
+		height: 4px;
+		width: 80%;
+		bottom:-35px;
+		left:10%;
+		margin: 0 auto;
+
 	}
 }
 
