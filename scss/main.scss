@@ -378,7 +378,43 @@ address p {
 .patient.clicked {
 	@include rotaZ(-30deg);
 }
-
+.unique {
+	font-size:3vw;
+	top:50%;
+	left:0;
+	transform: rotateZ(90deg);
+	color:$accent-dark;
+}
+.unique.clicked {
+	transform: rotateZ(0deg);
+}
+.candid {
+	font-size: 3vw;
+	bottom: 0;
+	left:30%;
+	color:$highlight;
+}
+.candid.clicked {
+	transform: rotateZ(60deg);
+}
+.dependable {
+	font-size: 3vw;
+	top:2%;
+	left:5%;
+	color:$accent-light;
+}
+.dependable.clicked {
+	transform: rotateZ(30deg);
+}
+.listener {
+	font-size: 4vw;
+	color:$main;
+	left:40%;
+	bottom:10%;
+}
+.listener.clicked {
+	transform: rotateZ(-60deg);
+}
 .content:before {
 	content:"";
 	display:block;
@@ -493,6 +529,15 @@ h2, .fade{
 }
 .italics {
 	font-style:italic;
+}
+.line-full {
+	width:30%;
+	height: 2vh;
+	margin-top:30px;
+	margin-bottom:40px;
+	background:$highlight;
+	position:absolute;
+	right:0;
 }
 @media screen and (min-width: 992px) {
 	.md-pull-up {
