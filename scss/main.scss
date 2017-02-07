@@ -547,18 +547,20 @@ h2, .fade{
 	.md-pull-down {
 		margin-top: 50px;
 	}
-	.line-after-mid::after {
-		content:"";
+	.line-after-mid {
+		
 		display: block;
-		position: absolute;
+		position:relative;
 		background: $highlight;
 		height: 4px;
 		width: 80%;
-		bottom:-35px;
+		float:left;
 		left:10%;
+		top:20px;
 		margin: 0 auto;
 
 	}
+	
 }
 
 @import "project";
