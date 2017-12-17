@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Exo:300|Raleway:400");
 body {
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+   }
 
 img, picture {
   width: 100%;
-  transition: all .4s linear; }
+  transition: all .4s linear;
+  -webkit-box-shadow: -1px 4px 19px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: -1px 4px 19px 0px rgba(0,0,0,0.2);
+box-shadow: -1px 4px 19px 0px rgba(0,0,0,0.2);}
 
 html, .container-fluid {
   padding-left: 0;
@@ -13,7 +17,10 @@ html, .container-fluid {
 .row {
   width: 100%;
   margin: 0; }
-
+h3 {
+  text-align: center;
+  margin-top: 30px;
+}
 @-webkit-keyframes fall {
   0% {
     top: -40px;
