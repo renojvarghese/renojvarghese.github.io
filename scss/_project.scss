@@ -17,12 +17,22 @@
 		letter-spacing: .7px;
 	}
 	a, a:focus {
-	color: $main;
-	transition: .2s all linear;
-}
+		color: $main;
+		transition: 0.2s all ease;
+	}
+	a.btn-primary {
+		position:relative;
+		color:white;
+		border:none;
+		&:hover {
+			background: $main;
+			color:white;
+		}
+	}
 	a:hover {
 		color: $accent-light;
 		text-decoration: none;
+
 	}
 
 	.text-contain::before {

@@ -9,9 +9,10 @@ img, picture {
   -moz-box-shadow: -1px 4px 19px 0px rgba(0, 0, 0, 0.2);
   box-shadow: -1px 4px 19px 0px rgba(0, 0, 0, 0.2); }
 
-h4 {
-  margin-top: 30px;
-  text-align: center; }
+.project-col-header {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px; }
 
 .align-center {
   text-align: center; }
@@ -556,7 +557,14 @@ h2, .fade {
     letter-spacing: .7px; }
   .project a, .project a:focus {
     color: #7F5838;
-    transition: .2s all linear; }
+    transition: 0.2s all ease; }
+  .project a.btn-primary {
+    position: relative;
+    color: white;
+    border: none; }
+    .project a.btn-primary:hover {
+      background: #7F5838;
+      color: white; }
   .project a:hover {
     color: #CCAF97;
     text-decoration: none; }

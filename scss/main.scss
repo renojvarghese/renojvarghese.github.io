@@ -50,20 +50,22 @@ $exo:'Exo', Helvetica, sans-serif;
 // 	background: $dark-purple;
 	
 // }
+
 body {
 	margin-bottom: 100px;
 	
 }
 img,picture {
-	width:100%;
+	width:100%; 
 	transition:all .4s linear;
 	-webkit-box-shadow: -1px 4px 19px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: -1px 4px 19px 0px rgba(0,0,0,0.2);
     box-shadow: -1px 4px 19px 0px rgba(0,0,0,0.2);
 }
-h4 {
-	margin-top:30px;
+.project-col-header {
+	margin-top:20px;
 	text-align:center;
+	font-size:24px;
 }
 .align-center {
 	text-align:center;
