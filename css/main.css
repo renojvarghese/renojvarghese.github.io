@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Exo:300|Raleway:400");
+.quote {
+  display: none;
+}
 body {
   margin-bottom: 100px; }
 
