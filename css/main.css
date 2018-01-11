@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Exo:300|Raleway:400");
-.quote {
-  display: none;
-}
 body {
   margin-bottom: 100px; }
 
@@ -583,6 +580,20 @@ h2, .fade {
 
 .text-contain {
   padding-left: 12%; }
+
+.border-all, .border-all-dark {
+  border: 3px solid #4C3522; }
+
+.border-all-medium {
+  border: 3px solid #7F5838; }
+
+.border-all-light {
+  border: 3px solid #CCAF97; }
+
+.no-shadow {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
 
 @media screen and (min-width: 992px) {
   .project::before {

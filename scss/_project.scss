@@ -51,7 +51,20 @@
 .text-contain {
 		padding-left:12%;
 }
-
+.border-all, .border-all-dark {
+	border: 3px solid $accent-dark;
+}
+.border-all-medium {
+	border: 3px solid $main;
+}
+.border-all-light {
+	border: 3px solid $accent-light;
+}
+.no-shadow {
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
 
 @media screen and (min-width:992px) {
 	.project::before {
