@@ -103,7 +103,7 @@ html, .container-fluid{
 	top:-40px;
 	opacity:0;
 	position:relative;
-	@include vendor(animation, fall 1.5s ease-out 1.0s forwards)
+	@include vendor(animation, fall 1.0s ease-out 0.5s forwards)
 }
 .contact-info {
 	background: $accent-dark;
@@ -113,8 +113,8 @@ html, .container-fluid{
 	width: 100%;
 	font-family: $raleway;
 	a {
-		float:left !important;
-		display: inline-block !important;
+		float:left;
+		display: inline-block;
 	}
 
 }
@@ -456,18 +456,7 @@ address p {
 	margin:5px;
 }
 
-.wave1 {
-	animation-delay: .5s;
-}
-.wave2 {
-	animation-delay: .8s !important;
-}
-.wave3 {
-	animation-delay: 1.0s !important;
-}
-.wave4 {
-	animation-delay: 1.5s !important;
-}
+
 
 @include key(fade-in) {
 	0% {
@@ -485,13 +474,24 @@ h2, .fade{
 }
 .overlay-back{
 	margin: 10px 0px;
-	float:left;
+}
+.wave1 {
+	animation-delay: 0.5s;
+}
+.wave2 {
+	animation-delay: 0.8s;
+}
+.wave3 {
+	animation-delay: 1.0s;
+}
+.wave4 {
+	animation-delay: 1.5s;
 }
 @media screen and (max-width:991px) {
 	.overlay-back{
 	max-height: 35vh;
 	overflow-y:hidden;
-	padding:0 !important;;
+	padding:0;
 	margin:0;
 	}
 }

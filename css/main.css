@@ -71,11 +71,11 @@ html, .container-fluid {
   top: -40px;
   opacity: 0;
   position: relative;
-  animation: fall 1.5s ease-out 1s forwards;
-  -webkit-animation: fall 1.5s ease-out 1s forwards;
-  -o-animation: fall 1.5s ease-out 1s forwards;
-  -ms-animation: fall 1.5s ease-out 1s forwards;
-  -moz-animation: fall 1.5s ease-out 1s forwards; }
+  animation: fall 1s ease-out 0.5s forwards;
+  -webkit-animation: fall 1s ease-out 0.5s forwards;
+  -o-animation: fall 1s ease-out 0.5s forwards;
+  -ms-animation: fall 1s ease-out 0.5s forwards;
+  -moz-animation: fall 1s ease-out 0.5s forwards; }
 
 .contact-info {
   background: #4C3522;
@@ -85,8 +85,8 @@ html, .container-fluid {
   width: 100%;
   font-family: "Raleway", Helvetica, sans-serif; }
   .contact-info a {
-    float: left !important;
-    display: inline-block !important; }
+    float: left;
+    display: inline-block; }
 
 address p {
   padding-top: 11px;
@@ -415,18 +415,6 @@ address p {
   background: #957F6E;
   margin: 5px; }
 
-.wave1 {
-  animation-delay: .5s; }
-
-.wave2 {
-  animation-delay: .8s !important; }
-
-.wave3 {
-  animation-delay: 1.0s !important; }
-
-.wave4 {
-  animation-delay: 1.5s !important; }
-
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0; }
@@ -456,14 +444,25 @@ h2, .fade {
   -moz-animation: fade-in 0.8s linear 1 forwards; }
 
 .overlay-back {
-  margin: 10px 0px;
-  float: left; }
+  margin: 10px 0px; }
+
+.wave1 {
+  animation-delay: 0.5s; }
+
+.wave2 {
+  animation-delay: 0.8s; }
+
+.wave3 {
+  animation-delay: 1.0s; }
+
+.wave4 {
+  animation-delay: 1.5s; }
 
 @media screen and (max-width: 991px) {
   .overlay-back {
     max-height: 35vh;
     overflow-y: hidden;
-    padding: 0 !important;
+    padding: 0;
     margin: 0; } }
 .overlay-back.red {
   background: #7F5838;
