@@ -412,7 +412,8 @@ address p {
 
 .process-item {
   margin-top: 20px; }
-
+.process-item p {
+  margin: 15px; }
 @media screen and (min-width: 992px) {
   .project::before {
     width: 3px; }
