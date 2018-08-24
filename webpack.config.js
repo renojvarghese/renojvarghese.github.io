@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const pug = {
     test: /\.pug$/,
@@ -38,7 +39,8 @@ const config = {
             filename: "index.html",
             template: "src/index.pug",
             inject: false
-        })
+        }),
+        new ExtractTextPlugin({ filename: "main.css" })
     ]
 };
 
