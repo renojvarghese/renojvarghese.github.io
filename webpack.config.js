@@ -2,6 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const pug = {
     test: /\.pug$/,
@@ -14,24 +15,35 @@ const babel = {
         loader: "babel-loader"
     }
 };
-const css = {
-    test: /\.css$/,
-    use: ExtractTextPlugin.extract({
-        fallback: "style-loader",
-        use: ["css-loader"]
-    })
+const scss = {
+    test: /\.scss$/,
+    use: [
+        MiniCssExtractPlugin.loader,
+        "css-loader",
+        {
+            loader: "clean-css-loader",
+            options: {
+                compatibility: "ie9",
+                level: 2,
+                inline: ["remote"]
+            }
+        },
+        "postcss-loader",
+        "sass-loader"
+    ]
 };
 const config = {
-    entry: { main: "./src/app.js" },
+    entry: { main: "./src/main.js" },
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "[name].bundle.js"
+        filename: "[name].js"
     },
     module: {
-        rules: [babel, pug, css]
+        rules: [babel, pug, scss]
     },
     devServer: {
-        contentBase: path.join(__dirname, "../dist/"),
+        contentBase: path.join(__dirname, "/dist/"),
+        watchContentBase: true,
         port: 8000
     },
     plugins: [
@@ -40,7 +52,14 @@ const config = {
             template: "src/index.pug",
             inject: false
         }),
-        new ExtractTextPlugin({ filename: "main.css" })
+        new HtmlWebpackPlugin({
+            filename: "hello.html",
+            template: "src/hello.pug",
+            inject: false
+        }),
+        new MiniCssExtractPlugin({
+            filename: "main.css"
+        })
     ]
 };
 
