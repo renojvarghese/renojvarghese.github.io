@@ -1,2 +1,2 @@
 import "./main.scss";
-import picture from "./static/placeholder.png";
+require.context("./static", true);
