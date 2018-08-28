@@ -53,7 +53,7 @@ const images = {
     use: {
         loader: "file-loader",
         options: {
-            name: "static/[name].[ext]"
+            name: "[path][name].[ext]"
         }
     }
 };

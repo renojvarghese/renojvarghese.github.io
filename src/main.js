@@ -1,2 +1,2 @@
 import "./main.scss";
-require.context("./static", true);
+require.context("../static", true);
