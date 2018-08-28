@@ -17,7 +17,12 @@ const plugins = sitemap.map(function(page, i) {
 });
 const pug = {
     test: /\.pug$/,
-    use: ["html-loader?attrs=false", "pug-html-loader"]
+    use: {
+        loader: "pug-loader",
+        options: {
+            self: true
+        }
+    }
 };
 const babel = {
     test: /\.js$/,
