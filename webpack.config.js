@@ -48,6 +48,15 @@ const scss = {
         "sass-loader"
     ]
 };
+const images = {
+    test: /\.(jpg|png)$/,
+    use: {
+        loader: "file-loader",
+        options: {
+            name: "static/[name].[ext]"
+        }
+    }
+};
 const config = {
     entry: { main: "./src/main.js" },
     output: {
@@ -55,7 +64,7 @@ const config = {
         filename: "[name].js"
     },
     module: {
-        rules: [babel, pug, scss]
+        rules: [babel, pug, scss, images]
     },
     devServer: {
         contentBase: path.join(__dirname, "/dist/"),

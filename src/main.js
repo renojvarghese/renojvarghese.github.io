@@ -1,3 +1,2 @@
 import "./main.scss";
-
-console.log("hello world");
+import picture from "./static/placeholder.png";
