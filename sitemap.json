@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "filename": "index.html",
+        "template": "src/index.pug",
+        "inNav": false,
+        "name": "Home",
+        "dir": ""
+    },
+    {
+        "filename": "projects/hello.html",
+        "template": "src/projects/hello.pug",
+        "inNav": false,
+        "name": "Hello",
+        "dir": "../"
+    }
+]

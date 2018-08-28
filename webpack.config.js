@@ -3,7 +3,18 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const sitemap = require("./sitemap.json");
 
+const plugins = sitemap.map(function(page, i) {
+    return new HtmlWebpackPlugin({
+        filename: page.filename,
+        template: page.template,
+
+        dir: page.dir,
+
+        inject: false
+    });
+});
 const pug = {
     test: /\.pug$/,
     use: ["html-loader?attrs=false", "pug-html-loader"]
@@ -47,16 +58,7 @@ const config = {
         port: 8000
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            filename: "index.html",
-            template: "src/index.pug",
-            inject: false
-        }),
-        new HtmlWebpackPlugin({
-            filename: "hello.html",
-            template: "src/hello.pug",
-            inject: false
-        }),
+        ...plugins,
         new MiniCssExtractPlugin({
             filename: "main.css"
         })
