@@ -10,7 +10,7 @@ const plugins = sitemap.map(function(page, i) {
         filename: page.filename,
         template: page.template,
 
-        dir: page.dir,
+        topDir: page.topDir,
 
         inject: false
     });
