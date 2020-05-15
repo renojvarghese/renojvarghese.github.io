@@ -1,93 +1,167 @@
-<!DOCTYPE html><html lang="en"><head><title>UX Case Study: GovContact</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Renoj's portfolio"><meta name="author" content="Renoj Varghese"><link href="../../main.css" rel="stylesheet"></head><body><nav class="nav fade-in delay-little"><div class="super-container"><ul class="nav-list"><li class="nav-list-item"> <a href="../../">Renoj Varghese</a></li><li class="nav-list-item push-right"><a class="nav-link-ext" href="https://github.com/renojvarghese">GitHub</a><a class="nav-link-ext" href="https://www.behance.net/renojvarghese">Behance</a><a class="nav-link-ext" href="https://www.linkedin.com/in/renoj-varghese/">LinkedIn</a></li></ul></div></nav><div class="break"><div class="main-logo"><a href="../../"><img src="../../static/img/logo.png"></a></div></div><div class="content"><div class="project-container"><h1 class="project-title">GovContact</h1><h2 class="project-header">Background</h2><div class="project-content"><p class="project-p"><span>How we engage in politics could use some improvement. 
-Conversations between citizens happen over social media, but there should more communication with legistators: those who have the immediate power to make effective change.
-As part of a class project, I decided to tackle this specific problem by designing an app that helps citizens contact their representatives more often.
-UX design can play a role in political activisim by ideating the technology to help us better communicate.</span><div class="role-container"><label class="role-name">Role: UX Researcher &amp; UX/UI Designer. </label>Conducted user research, ideated personas to empathize with, wrote user stories on their needs, 
-created wireframes to put my ideas on paper, made prototypes of the app, and tested it with real users.
-Aftewards I created a second prototype from the new ideas that came from user testing.</div></p></div><h2 class="problem">How might we help U.S. citizens contact their government representatives?</h2><h2 class="project-header">Research</h2><div class="project-content"><p class="project-p"><h3 class="project-subheader">Initial Focus Group</h3><p class="project-p"></p><span>The initial focus group was composed of my classmates, all of whom were at or above voting age. 
-I presented my idea in class to hear some of the questions and frustrations a citizen might have. 
-We talked about how most only knew who their Congressmen and Governor were. 
-If one of my classmates were to contact a representative, they would use a search engine to find a representatives social media or email address. 
-This research was a good primer to think about how a citizen would need contact information for all their representatives at the federal, state, and local levels. </span><h3 class="project-subheader">Competitive Analysis</h3><p class="project-p"></p><span>There are many applications (mobile and web) that can find U.S. governmental offcials.
-My methodology for research was to understand their user experience and see what could be improved. 
-Part of this research was to also read the reviews of these apps (the good, the bad, and the odd). 
-The research spanned government, non-profit, and commercial organizations. </span><div class="img-container"><img src="../../static/img/govcontact/ca-logos.jpg" alt="competitive analysis icons"><div class="caption"></div></div><h3 class="project-subheader">Online Research</h3><p class="project-p"></p><span>News articles and statstics were useful to understand <a href="https://www.nytimes.com/2016/11/22/us/politics/heres-why-you-should-call-not-email-your-legislators.html">who responds to citizen communication</a>, <a href="https://www.azavea.com/blog/2017/10/03/whats-the-best-way-to-contact-your-representatives/">some effective ways of contact </a>, and <a href="https://www.quorum.us/data-driven-insights/congress-social-media-2018/412/">how active representatives are on social media</a>.
-The research helped picture what were the best methods of contacting a representative in both terms of efficacy and availability.
-It is crucial to understand this when deciding what contact info (email, phone, social media handles etc) to provide.</span><h3 class="project-subheader">Contacting my own Representatives</h3><p class="project-p"></p><span>The best way to understand the process of contacting a government representative is to contact a government representative. 
-I called 5 representatives' offices to interview someone working there.
-I learned that it is usually an intern or staff member that receives the call/email/letter. The message is usually recorded as part of a tally or redirected to the proper office.
-A caller can receive immediate feedback over the phone. An email or letter will usually receive a templated response. 
-Understanding this process helped me make key design decisions in the future. </span><h3 class="project-subheader">Personas</h3><p class="project-p"></p><span>The culminating result of the previous research: the personas to empathize with during the design process.
-I tackled the problem from two perspectives. One is Briana Jackson, a nurse who could reguarly use this app in her activism.
-Another perspective is Terry Mendoza, who would use the app for a limited time to tell his story to legislators. </span><div class="img-container"><img src="../../static/img/govcontact/persona_briana.png" alt="Persona Briana Jackson"><div class="caption"></div></div><div class="img-container"><img src="../../static/img/govcontact/persona_terry.png" alt="Persona Terry Mendoza"><div class="caption"></div></div><h3 class="project-subheader">Key Insights</h3><p class="project-p"></p><ul class="project-list"><li class="project-list-item"><strong>Representative information varies greatly between apps: </strong> Some apps show only Congressmen. Some show only state legislators. 
-For GovContact, it is important to show representatives at every level: federal, state, local.
-Local officials can have just a large an impact on daily life as a Senator. All reps should be available to a citizen.</li><li class="project-list-item"><strong>Finding contact info can take some time: </strong>Many applications I found are bogged down with account creation and email registration. 
-These barriers might prevent citizens from contacting their reps.</li><li class="project-list-item"><strong>Political neutrality is important: </strong>From the focus group and reading user reviews of current apps, citizens would care about political neutrality in an app.
-It wouldn't be fair to be bias towards a political party. On the same logic, the app shouldn't push specific issues or include advertisements.</li><li class="project-list-item"><strong>Frequency is the key to getting through: </strong>From the conversations with representatives' offices, it seemed that citizens need to contact their representatives frequently to be effective.
-A call or email may take 5 minutes. If this action were taken by many people at the same time, government officials would have to listen.
-GovContact should be that app that help citizens take this action to make effective change.</li></ul></p></div><h2 class="project-header">Initial Idea: Web App</h2><div class="project-content"><p class="project-p"></p></div><div class="project-p">The first idea was to create GovContact as a web application. It would be accessible to anyone with internet access.
-There would be no app to download. And it can provide up-to-date information on a consistent basis. Briana and Terry could use a simple link to have access to their representatives when they needed to make their voices heard.
+<!DOCTYPE html><html lang="en"><head><title>GovContact: Civic Engagement Mobile App Design</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Renoj's portfolio"><meta name="author" content="Renoj Varghese"><link href="../../main.css" rel="stylesheet"><style>h6,blockquote {
+    color: #956f2e;
+}
+.solution-block {
+    background: #DCB167;
+    color: #fefefa;
+    
+}
+.solution-block h6, .solution-block blockquote {
+    color: #fefefa;
+}
+.tint-box {
+    background: #F0E2CC;
+}
+.fade{ 
+    opacity:0;
+}
+.slide-down {
+    transform: translateY(-20px);
+}</style></head><body><!--+nav(nav, topDir)--><div class="content"><nav class="nav"><div class="content-med-container animate fade slide-down"><ul class="nav-item-list"><li class="nav-item small-caps logo"><a href="../../">renoj</a></li><li class="nav-item"><ul class="nav-item-list"><li class="nav-item small-caps mr-xl"><a href="../../">work</a></li><li class="nav-item small-caps mr-xl"><a href="../../about">about</a></li><li class="nav-item small-caps right"><a href="../../static/docs/resume_renoj_varghese.pdf" target="_blank">resume</a></li></ul></li></ul></div></nav><div class="project-container content-container project-extra-padding"><h1 class="project-title animate fade slide-down">GovContact</h1><h6 class="animate fade slide-down delay-small">introduction</h6><h2 class="mb-xxl animate fade slide-down delay-small">Some of the challenges of contacting a legislator are (1) learning about representatives, (2) staying up to date with representatives' actions, and (3) sending frequent messages. Contacting your legislator is one of the most effective ways to use your political voice. </h2><h2 class="mb-xxl animate fade slide-down delay-small">GovContact is a mobile app that makes contacting a representative a simpler process. </h2><!--The Battle for Net Neutrality Movement helped send 22,000,000 messages to Congress. It was successful telling citizens how and why to contact their represenatives. GovContact was inspired by that sentiment--><!--Contacting your legislator is one of the simplest and most effective ways to use your political voice. GovContact puts that power at a citizen's fingertips. --><!--UX design has a role in political activism by designing how we can communicate with government officials.--><div class="goals grid-3 flex mt-xxl animate fade slide-down delay-med"><div class="grid-3-item left"><p class="bold">Goal 1</p><p class="project-p">Inform citizens about representatives' contact info and political stance.</p></div><div class="grid-3-item middle"><p class="bold">Goal 2</p><p class="project-p">Keep citizens up to date with representatives’ actions and policies.</p></div><div class="grid-3-item right"><p class="bold">Goal 3</p><p class="project-p">Encourage citizens to send frequent, clear, and concise messages.</p></div></div><h3 class="animate fade slide-down delay-large">Overview</h3><p class="mb-l animate fade slide-down delay-large"><strong>Roles: </strong>Product Designer, UX Researcher</p><p class="mb-l animate fade delay-large"><strong>Team: </strong>Solo, with help from mentors and professors</p><p class="animate fade delay-large"><strong>Duration: </strong>10 Weeks</p></div><div class="solution-block project-med-padding ptb-0-mt"><div class="content-container project-container ptb-0-mt"><div class="solution grid grid-2 flex"><div class="grid-2-item left"><h6>Solution</h6><h4>Goal 1</h4><p class="project-p">Inform citizens about representatives' contact info and political stance.</p><h4>Meet Your Representatives</h4><p class="project-p">Learn about all your representatives in one place. Find their contact information and where they stand on the issues.
+</p></div><div class="grid-2-item right ml-m"><div class="video-container"><div class="video-inner-container"><video width="100%" autoplay loop id="gc-sol-1"><source src="../../static/img/govcontact/gc-rep.mp4">Your browser does not support the video tag.</video></div><div class="controls"><h6 class="video-ctrl" id="gc-sol-1_ctrl" target="gc-sol-1">Play</h6></div></div></div></div><div class="solution grid grid-2 flex"><div class="grid-2-item left"><h4>Goal 2</h4><p class="project-p">Keep citizens up to date with representatives’ actions and policies.</p><h4>Political Feed For Your Reps</h4><p class="project-p">Stay updated through social media from representatives, bills on the docket, and petitions from activists.
+</p></div><div class="grid-2-item right ml-m"><div class="video-container"><div class="video-inner-container"><video width="100%" autoplay loop id="gc-sol-2"><source src="../../static/img/govcontact/gc-feed.mp4">Your browser does not support the video tag.</video></div><div class="controls"><h6 class="video-ctrl" id="gc-sol-2_ctrl" target="gc-sol-2">Play</h6></div></div></div></div><div class="solution grid grid-2 flex"><div class="grid-2-item left"><h4>Goal 3</h4><p class="project-p">Encourage citizens to send frequent, clear, and concise messages.</p><h4>Message Within GovContact</h4><p class="project-p">Allow citizens to send messages through email, voice, or video recordings. Each message is sent as an email embedded with the media a citizen wants to share.
+</p></div><div class="grid-2-item right ml-m"><div class="video-container"><div class="video-inner-container"><video width="100%" autoplay loop id="gc-sol-3"><source src="../../static/img/govcontact/gc-mess-1.mp4">Your browser does not support the video tag.</video></div><div class="controls"><h6 class="video-ctrl" id="gc-sol-3_ctrl" target="gc-sol-3">Play</h6></div></div></div></div></div></div><div class="project-extra-padding"><div class="content-container project-container"><h6>research</h6><div class="grid-2 flex mb-xxl"><div class="grid-2-item pr-xl"><h4 class="mb-s">Focus Group</h4><p class="caption mb-m">Hitting the ground running, I arranged a focus group with citizens to receive a large amount of qualitative insights in a short amount of time. Questions and discussion focused on how citizens would contact reps.</p><ul class="mb-xxxl"><li class="quote-box"><!-- h5.quote-question| What do you wish could be improved in the process of finding your representatives' contact information?--><p class="caption-small">"It would be nice to have all my representatives' information in one place on my phone ... like having my Senator's phone number in my Contacts" <strong>– Emily</strong></p></li></ul><h4 class="mt-xxxl mb-">Online Research</h4><p class="caption mb-m">To understand civic engagement beyond my focus group and interviews, I found research online that revealed new insights into the problem.</p><!--p.caption-small Sources included The Annenberg Public Policy Center, Pew Research Center, Congress Management Foundation, The Boston Globe, and GlobalCitizen.org.--><ul><li class="caption-small"> 70% of communication staffers ranked personalized messages (emails, phone calls, letters) as "Very Important" towards understanding constituents opinions.<a class="bold" href="http://www.congressfoundation.org/storage/documents/CMF_Pubs/cwc-perceptions-of-citizen-advocacy.pdf">– Congress Management Foundation</a></li></ul><!--.quote-box.mb-xxlblockquote.quote 
+    | In a survey of 1,000 individuals, 77% could not name one of their state senators.
+h4.quote-source – 
+    a(href="https://www.bostonglobe.com/magazine/2015/03/28/how-many-people-know-their-senators/yfgXyHR96X7YGhesaNQbnM/story.html") Emeralde Jensen Roberts, Boston Globe--><!--.quote-boxblockquote.quote 
+    | 70% of communication staffers ranked personalized messages (emails, phone calls, letters) as "Very Important" towards understanding constituents opinions.
+h4.quote-source – 
+    a(href="http://www.congressfoundation.org/storage/documents/CMF_Pubs/cwc-perceptions-of-citizen-advocacy.pdf") Congress Management Foundation, "Communicating with Congress"--></div><div class="grid-2-item pl-xl"><h4 class="mb-s">Interviews with Rep Offices</h4><p class="caption mb-m">After the focus group, I wanted to understand how a message reaches a rep. I contacted my own reps' offices and conducted surveys on how a citizen could best get their voice heard.</p><ul class="mb-xxxl"><li class="caption-small">Representative employees answer citizen reports rather than representatives themselves. Employees forward important messages and create summary reports.</li></ul><h4 class="mt-xxxl mb-s">Competitive Analysis</h4><p class="caption mb-m">Finally, analysis into civic apps provided inspiration into what works and what could be improved. </p><div class="img-container"><img src="../../static/img/govcontact/competitive-analysis.png" alt="competitive-analysis.png"></div><h4 class="mb-xxl mt-xl">Takeaways</h4><ul><li class="mb-xl caption-small">Open States and Capitol Call allow citizens to see current bills on the docket. Knowing the bills a representative has written says a lot about what the representative supports.</li><li class="caption-small">Some apps, like Brigade and Capitol Call, had a complicated onboarding process, which included a long sign-up process, surveys, or account verifications.</li></ul></div></div><div class="grid-2 flex mt-xl"><div class="grid-2-item pr-xl"></div><div class="grid-2-item pl-xl"></div></div></div></div><div class="tint-box"><div class="insights-opportunities content-container project-container"><h3 class="i-o-header">Key Insights and Opportunities</h3><div class="i-o"><h4 class="insight">The focus group showed how citizens would spend most of their time researching who their representatives are</h4><p class="opportunity"> <strong>Goal 1: </strong>One opportunity is to provide a citizens' reps and their contact info in one place</p></div><div class="i-o"><h4 class="insight">One useful feature found in the Open States and Capitol Call was to see bills that representatives had written</h4><p class="opportunity"> <strong>Goal 2: </strong>There's an opporunity to expand this idea to help citizens stay updated with all of a representative's activities</p></div><div class="i-o mb-0"><h4 class="insight">Talking to government offices and conducting online research showed that frequent communication is important to affect real change</h4><p class="opportunity"> <strong>Goal 3: </strong>An opportunity is to encourage citizens to contact and engage with their representatives often</p></div></div></div><div class="project-extra-padding"> <!--.content-container.project-containerh3 Personas
+p.project-p.
+    To summarize all my research efforts, I made personas that represented the people I wanted to design for. 
+    They were referred to throughout the design process to remember who I was designing for.
 
-</div><h2 class="project-header">User Stories</h2><div class="project-content"><p class="project-p"><span class="project-p">The following user stories represent what GovContact is able to do.
-Writing user stories helped me think inside the shoes of someone who might use this app.
-I considered how Terry could find the names of the state legislators making a decision on a free tuition bill.
-Briana should be able to use GovContact to find channels to communicate with a politician directly, such as through phone, email or social media. </span><div class="img-container"><img src="../../static/img/govcontact/govcontact_user-stories.jpg" alt="user stories"><div class="caption"></div></div></p></div><h2 class="project-header">Wireframes</h2><div class="project-content"><p class="project-p"><h3 class="project-subheader">Deciding What Contact Information To Have</h3><p class="project-p"></p><span class="project-p">One of the main challenges of this app is to decide which forms of contact to provide to citizens.
-Every Government representative has a phone line and email, and most officials utilize social media. 
-Representatives have websites as well.
-People can also send in hand letters to a physical address. 
-With so many options it was difficult to choose what contact info to show. 
-It is better to choose a small subset of information to showcase rather than overwhelm the user with all the contact information.
+.mb-xxl
+    .grid-2.flex
+        .grid-2-item
+            +img("briana.png")
+        .grid-2-item
+            +img("terry.png")
+//h3.mt-separate User Stories   
+//+img("user-stories.png")--><div class="content-container project-container"><h6>design </h6><h3>Design Evolution</h3><p class="project-p">There were 4 iterations of design and testing to get towards the final solution. At each stage, I incorporated feedback from users and mentors.
+Testing consisted of citizens using a prototype in an interview format and answering followup questions.
+Mentors provided more formal critique.</p><div class="grid-3 flex"><div class="grid-3-item"><div class="img-container"><img class="lozad" src="../../static/img/govcontact/wireframes.png" alt="wireframes.png"></div></div><div class="grid-3-2-item right pl-xxxl"><h5>Representative Cards</h5><p class="caption">Cycle through individual cards to meet reps and learn how to contact them.</p><p class="bold">Rationale</p><!--ulli.mb-s Based on the focus group, the main problem to solve was consoldiating representatives’ info in one place. 
+//li.mb-m Citizens could learn about reps through social media links--><p class="caption">Based on the focus group, the main problem to solve was consoldiating representatives’ info in one place. </p><p class="bold">Feedback </p><!--ulli.mb-s If only contact info is present, it’s nicer to have them laid out one screen rather than cycling through one by one. 
+li.mb-s 0% of participants thought they would need more contact information (office address, rss feed)--><p class="caption">If only contact info is present, it’s nicer to have them laid out one screen rather than cycling through one by one. </p><p class="caption">0% of participants thought they would need more contact information (office address, rss feed)</p></div></div><div class="grid-3 flex mt-separate"><div class="grid-3-item"><div class="img-container"><img class="lozad" src="../../static/img/govcontact/single-page-layout.png" alt="single-page-layout.png"></div></div><div class="grid-3-2-item right pl-xxxl"><h5>Single Page Layout</h5><p class="caption">See representative information on a single screen. Easy to scroll through and meet all representatives.</p><p class="bold">Rationale</p><p class="caption">Feedback from first user test showed that citizens wanted to be able to meet their representatives faster. </p><p class="caption">Focus Group and Online Research demonstrated how citizens should know where representatives stand on the issues.</p><!--ulli.mb-m Feedback from previous user test showed that citizens wanted to be able to meet their representatives faster. 
+//li.mb-s Based on the Focus Group, the main problem to solve was consoldiating representatives’ info in one place.
+li.mb-s Focus Group and Online Research showed that citizens needed to know where reps stand on the issues. Political party icons could show how a rep might vote.--><p class="bold">Feedback</p><p class="caption">Citizens needed more information on representatives’ political stance.</p><!--ulli.mb-m Knowing party affiliation is not enough to know a rep's political stance and may send a divisive message.--></div></div><div class="grid-3 flex mt-separate mb-xxxl"><div class="grid-3-item"><div class="img-container"><img class="lozad" src="../../static/img/govcontact/rep-profiles-2.png" alt="rep-profiles-2.png"></div></div><div class="grid-3-2-item right pl-xxxl"><h5>Representative Profiles</h5><p class="caption">Profiles contain both contact info and individualized information about political stance.</p><p class="bold">Rationale</p><!--p.caption Profiles allow citizens to understand how a representative might vote. Pulled away from a single page layout to chunk more appropriate information. Began to use purple as a primary color to symbolize unity (mix of red and blue)--><!--ulli.mb-s Previous user test showed citizens needed to know more about a political stance than political party. Rep Profiles ignore political party and look at how each rep has supported the issues. 
+li.mb-s Pulled away from a single page layout to chunk more appropriate information.--><p class="caption">Previous user test showed citizens needed to know more about a political stance than political party. Rep Profiles ignore political party and look at how each rep has supported the issues. </p><p class="caption">Pulled away from a single page layout to chunk more appropriate information.</p><p class="bold">Feedback</p><!--p.caption Citizens would want to stay updated with what representatives are up to on a daily basis. Based on the online research and competitive analysis, it would be informative to know what legislation representatives are voting on. Another factor to consider was being able to message representatives through GovContact--><!--ulli.mb-s Citizens would want to a way to message representatives inside GovContact--><p class="caption">Citizens would want to stay updated with what representatives are up to on a daily basis as well as message reps inside GovContact.</p></div></div><div class="grid-3 flex mt-separate"><div class="grid-3-item"><div class="img-container"><img class="lozad" src="../../static/img/govcontact/current-design-2.png" alt="current-design-2.png"></div></div><div class="grid-3-2-item right pl-xxxl"><h5>Adding Political Feed and Messaging</h5><!--p.caption Citizens can stay updated with representatives through a political feed, that finds representatives’ social media, petitions, and recent legislation. To avoid bias, information does not come from a formal news outlet. GovContact also has a messaging feature, which citizens can send text, voice, and video messages to representatives. --><p class="caption">Political Feed scrapes social media, petitions, and legislation to inform and prompt citizens to act. Citizens can use in-app messaging to send text, voice, and video.</p><p class="bold">Rationale</p><!--p.caption Incorporate a more informative role for GovContact. The goal was to help citizens know what they’re representatives are up to as well encourage them to engage with petitions and bills. The messaging system can be acceessed from representative profiles, the political feed, and the main navigation to encourage citizens to contact their representatives through GovConctact--><!--p.caption.Expanded features from Competitive Analysis to see rep's legislation.  
+Online Research and Focus Group showed that citizens need to trust information source. Political Feed relies on primary sources rather than news outlets. 
+Previous user test showed that citizens would also want to message reps within the app.--><!--ulli.mb-s Expanded features from Competitive Analysis to see rep's legislation.  
+li.mb-s Online Research and Focus Group showed that citizens need to trust information source. Political Feed relies on primary sources rather than news outlets. 
+li.mb-s Previous user test showed that citizens would also want to message reps within the app.--><p class="caption">Expanded feature from Open States and Capitol Call to see representatives' bills to include all of their activities.</p><p class="caption">Online Research and Focus Group showed that citizens need to trust information source. Political Feed relies on primary sources rather than news outlets. </p><p class="caption">Previous user test showed that citizens would also want to message reps within the app.</p><p class="bold">Feedback</p><!--p.caption Engagements from social media, petitions, and bills could be sent to representatives as a summary report to be used to understand citizens’ opinions. --><!--p.caption Engagements from social media, petitions, and bills could be sent to reps as a summary report to be used to understand citizens’ opinions. --><!--ulli.mb-m Engagements from social media, petitions, and bills could be sent to reps as a summary report to be used to understand citizens’ opinions. --><p class="caption">Engagements from social media, petitions, and bills could be sent to reps as a summary report to be used to understand citizens’ opinions. </p></div></div><!--.grid-3.flex.grid-3-item.left
+    +img("wireframe.png")
+    h5.mt-m.mb-0 Wireframing
+    p.caption.
+        The first goal was to see what contact information people would need. Phone, email, and social handles were rated most likely to be used.
+    //- p.project-p
+    //-     strong Frustrations Solved:
+    //-     |
+    //- p.project-p
+    //-     strong Feedback
+    //-     |
+.grid-3-item.middle
+    +img("first-prototype.png")
+    h5.mt-m.mb-0  First Prototype
+    p.caption.
+        Trying to gauge the amount of info a citizen need about a rep. 
+        Users needed more information about a rep's political stance than party affiliation.
+        Also started with a layer of a classic "red, white, and blue" visual design.
+    //- p.project-p
+    //-     strong Frustrations Solved:
+    //-     |
+    //- p.project-p
+    //-     strong Feedback
+    //-     |
 
-Examples of my information experiments can be found below:</span><div class="img-container"><img src="../../static/img/govcontact/govcontact_wireframes-cards.png" alt="wireframes"><div class="caption"></div></div><h3 class="project-subheader">Final Wireframes</h3><p class="project-p"></p><span class="project-p">The final decision for contact info was to include a phone number, an email address, and links to at least Twitter and Facebook.
-The online research and interviews with government employees supported my decision on three areas: (1) efficacy, (2) digital availability, and (3) convenience of each contact.
-</span><span class="project-p">To keep it simple, the web app is a search screen, similar to Google or another search engine. 
-The query is to type in a home address, which is the most accurate key to find a person's representatives.</span><div class="img-container"><img src="../../static/img/govcontact/govcontact_wireframes.jpg" alt="wireframes"><div class="caption"></div></div></p></div><h2 class="project-header">Styles and Icons</h2><div class="project-content"><p class="project-p"><span class="project-p">The colors and icons for the app. I went with the classic red, white, and blue, 
-since I was focusing on government representatives in the U.S.A. 
-To convey the governmental nature of the app, graphics were designed around stars, flags, and government buildings.
-The colors helped accent this tone. 
-Color was also important to indicate political party.
-Democrats would be given a blue icon, republicans would given a red icon, an independents/moderates/unknown party would not be given an icon.
-The fonts Lato and Roboto offered strong readability. Varying fonts better highlighted information (e.g. Lato Bold for headers; Roboto for paragraph fonts and labels)</span><div class="img-container white-bg"><img src="../../static/img/govcontact/style-guide.png" alt="styles"><div class="caption"></div></div></p></div><h2 class="project-header">Prototyping</h2><div class="project-content"><p class="project-p"><h3 class="project-subheader">Code Prototypes are GREAT, but also time-consuming</h3><p class="project-p"></p><span>The first prototype was created using React.js and Google Civic API. It was a great way to combine my programming skills with my design skills.
-Having something fully interactable (compared to click-through prototypes) was helpful during user testing. There was greater insight into how someone would use GovContact in the wild.
-However, a lot of time was invested in programming that could have been dedicated to reviewing design decisions or organizing a user study.
-In the end, it was worth the investment, and I also better understand when a code prototype is needed. </span><h3 class="project-subheader">Link &amp; Screenshots to Prototype</h3><p class="project-p"></p><span> Here are screenshots of the 
-first prototype. It can also be found by clicking </span><a class="link" href="https://gov-contact.herokuapp.com">here. </a><h3 class="project-subheader">First Screen: Search Bar</h3><p class="project-p"></p><span>The first screen of the web app is for the user to search for the representatives, by address.
-It starts with header, with a description of GovContact and a hero image to display brand.
-The only interactable item is the search box to input an address.</span><div class="img-container"><img src="../../static/img/govcontact/final-result.png" alt="final"><div class="caption"></div></div><h3 class="project-subheader">Second Screen: All the Reps</h3><p class="project-p"></p><span>The second half of the app is to display all the representatives' information in a card format, which was decided upon in the wireframe stage.
-Every representative is required to have atleast an email and phone number. A Twitter or Facebook handle will also be displayed.
-All of this takes place on the same screen, right below the search bar.</span><div class="img-container"><img src="../../static/img/govcontact/final-result2.png" alt="final"><div class="caption"></div></div></p></div><h2 class="project-header">User Testing</h2><div class="project-content"><p class="project-p"><span class="project-p">The web app was tested with 5 participants in an informal interview setting. Each participant explored the site on their own and was asked follow up questions.
-Testing the app revealed: </span><ul class="project-list"><li class="project-list-item"><strong>Filtering and Sorting Options: </strong>Most participants spent a lot of time scrolling to learn about representatives. 
-Every participant had some diffculty when asked to find a specific representative.
-A sorting or filtering option would help solve this usability issue.</li><li class="project-list-item"><strong>Evaluating brand: </strong>Participants were asked to rate how well a given adjective described GovContact.
-When given the adjective "politically neutral," most participants said it did not describe GovContact well.
-Political party was the only thing that a citizen would know about a representative. 
-There might be a better way to use color and brand to showcase GovContact in a more neutral way. </li><li class="project-list-item"><strong>Web may not be right platform: </strong>Most participants they were more likely to use a search engine if they were already on a browser. 
-As a website, GovContact may not provide as much value.</li></ul></p></div><h2 class="project-header">Turn to a Mobile App</h2><div class="project-content"><p class="project-p"><span>To provide better value, GovContact should be a mobile app. 
-The idea came from a user testing participant who might store a representative's contact information on their mobile phone.
-Although it was only a single participant who thought of this, the comment inspired an idea to create a contact book of government representatives.
-There wouldn't be any link to follow. 
-By taking up visual space inside a phone, the app would also serve as a reminder.
-A mobile would also allow a person to call a representative directly from their phone.
-The concept is to put your Senator in your contact book. 
-</span></p></div><h2 class="project-header">Style Update</h2><div class="project-content"><p class="project-p"><span>After user feedback, I decided to update the brand of GovContact. 
-Instead of contrasting, polarized colors of red and blue, the primary color is a purple, the unity of the former.
-To convey the feeling of government, I used photographs of building and monuments.</span><div class="img-container"><img src="../../static/img/govcontact/visual-design.png" alt="visual design"><div class="caption"></div></div></p></div><h2 class="project-header">Solution</h2><div class="project-content"><p class="project-p"><h3 class="project-subheader">2-step Onboarding</h3><p class="project-p"></p><span>GovContact doesn't require anyone to create an account or provide an email.
-The only required information is a physical address that can be used to find the correpsonding reps.</span><div class="display-flex"><div class="grid-6"><div class="img-container"><img src="../../static/img/govcontact/gc_start.png" alt="start"><div class="caption"></div></div></div><div class="grid-6"><div class="img-container"><img src="../../static/img/govcontact/gc_address.png" alt="enter address"><div class="caption"></div></div></div></div><h3 class="project-subheader">Finding your rep</h3><p class="project-p"></p><span>Each of the three levels of government has a different impact on a citizens life, so each represenative is chunked into their proper group.
-Finding a rep is the same process as finding a contact in Messenger or Whatsapp.
-I borrowed the familiar layout such that Briana or Terry could use GovContact as they would any other messaging app. </span><div class="display-flex"><div class="grid-6"><div class="img-container"><img src="../../static/img/govcontact/gc_home.png" alt="home"><div class="caption"></div></div></div><div class="grid-6"><div class="img-container"><img src="../../static/img/govcontact/gc_search.png" alt="search"><div class="caption"></div></div></div></div><h3 class="project-subheader">Everything you need to know</h3><p class="project-p"></p><span>Based on the online research and interviews with government employees, the contact information for each rep is ordered by availability and effectiveness.
-Although no political party is mentioned, Briana and Terry can understand how each of their reps stands on the issues. </span><div class="display-flex"><div class="grid-6"><div class="img-container"><img src="../../static/img/govcontact/rep.png" alt="rep"><div class="caption"></div></div></div><div class="grid-6"><div class="img-container"><img src="../../static/img/govcontact/rep-expanded.png" alt="rep expanded"><div class="caption"></div></div></div></div><h3 class="project-subheader">Made for mobile</h3><p class="project-p"></p><span>When desiging the mobile, I used a diagram I found in an </span><a href="https://www.smashingmagazine.com/2016/09/the-thumb-zone-designing-for-mobile-users/">article by Smashing Magazine </a><span>to have the main actions of every screen at a natural reach to the user.</span><div class="img-container"><img src="../../static/img/govcontact/mobile-designed.png" alt="mobibly designed"><div class="caption"></div></div><h3 class="project-subheader">User Flow</h3><p class="project-p"></p><span>I created a user flow to illustrate how each screen connects to one another. 
-It was important to consider all the default and error states a user might encounter.
-A link to the high fidelity user flow can be found </span><a href="overflow.io/s/IPM5WU">here</a><h3 class="project-subheader">InVision Prototype</h3><p class="project-p"></p><span>The final step in the solution was to create a click-through prototype.
-Time was a little short and there were no complex interactions, so a click-through prototype was more appropriate. 
-An embed of the prototype can be found below.
-</span><div class="img-container"><iframe width="438" height="930" src="//invis.io/CFRFG9WYVBE" frameborder="0" allowfullscreen></iframe></div></p></div><h2 class="project-header">Reflection and Next Steps</h2><div class="project-content"><p class="project-p"><h3 class="project-subheader">Summary</h3><p class="project-p"></p><span>GovContact is an app to connect citizens to their representatives. 
-The process involved research, interviewing users, wireframing, branding, prototyping, and user testing.
-The final solution was a mobile app in which citizens could learn about their representatives and contact them quickly.</span><h3 class="project-subheader">Future Steps</h3><p class="project-p"></p><span>The next steps for the app would be to test the click-through prototype with real users.
-The purpose of the usability test is to identify the UX problems that ought to be fixed before development.
-Afterwards, and iOS and Anroid app can be programmed and deployed to their respective stores. </span><h3 class="project-subheader">Possible Features</h3><p class="project-p"></p><ul class="project-list"><li class="project-list-item"><strong>Contact Templates: </strong>One additional feature to explore is templates for what to say to a representative. 
-This could take the form of a script before calling or a template form for an email or social media post</li><li class="project-list-item"><strong>Social Sharing: </strong>Another important feature is having citizens encourage their friends and followers to contact their represenatives.
-Government representatives are more likely to listen to a request if it came from a multitude of citizens.
-If GovContact could have a social sharing feature, it might encourage other citizens to take action.</li></ul><h3 class="project-subheader">Lessons</h3><p class="project-p"></p><ul class="project-list"><li class="project-list-item"><strong>Understanding how to use brand: </strong>There was huge change in brand. It was in respect to better communicating the feeling of government, while also refraining from the colors of political parties.
-In this manner, I was learned how to explore brand beyond the expected to create something unique.</li><li class="project-list-item"><strong>Knowing what type to prototype: </strong>I utilized two types of prototypes: code prototypes and click-through prototypes.
-The web prototype made in React.js was useful for testing how someone would be most likely to interact with the app.
-However programming took up a lot of time compared to the click-through protoype, which I could focus more on the design of GovContact.
-The lesson I learned was when to use each kind of prototype.</li></ul></p></div></div></div><div class="break"></div><footer class="footer"><div class="super-container"><div class="footer-inner"> <div class="get-in-touch footer-section"><h3 class="footer-header header">Get in Touch</h3><p class="footer-p">Say hello at <a href="mailto:renoj@uconn.edu">renoj@uconn.edu</a></p><p class="weak">This site was proudly built in Pug, SASS, and Webpack</p></div><div class="footer-socials footer-section"><h3 class="footer-header header">Checkout More</h3><ul class="socials-list"><li class="socials-item"> <a class="socials-link" href="https://github.com/renojvarghese">GitHub</a></li><li class="socials-item"> <a class="socials-link" href="https://www.behance.net/renojvarghese">Behance</a></li><li class="socials-item"> <a class="socials-link" href="https://www.linkedin.com/in/renoj-varghese/">LinkedIn</a></li></ul><a href="../../static/docs/resumeRenojVarghese.pdf">View Resume</a></div></div></div></footer><script type="text/javascript" src="../../main.js"></script></body></html>
+.grid-3-item.right
+    +img("second-prototype.png")
+    h5.mt-m.mb-0  Second Prototype
+    p.caption.
+        Went to a profile design where reps can state their political stance.
+        Users appreciated the amount of information, but the app lacked visual appeal.
+    //- p.project-p
+    //-     strong Frustrations Solved:
+    //-     |
+    //- p.project-p
+    //-     strong Feedback
+    //-     |--><!--.grid-3.flex.grid-3-item
+    +img("final-rep.png")
+    h4 Current Solution
+    p.project-p.
+        After testing the second prototype and receiving feedback from mentors, I learned that the information was too tightly packed. 
+        For the final set of information, I gave information more room to breathe and further developed the visual design.
+    //- p.project-p
+    //-     strong Frustrations Solved:
+    //-     |
+    //- p.project-p
+    //-     strong Feedback
+    //-     |
+.grid-3-item
+    +img("final-feed.png")
+    h4 Current Solution Pt.2
+    p.project-p.
+        One of the features after the second prototype was a Political Feed feature, where citizens could keep up with representatives' social media, petitions being called upon, and bills up for vote.
+        This information would come directly from representatives, government sites, and petition websites, like Change.org. It relies less on news outlets that may have bias. Citizens are given the primary source.
+    //- p.project-p
+    //-     strong Frustrations Solved:
+    //-     |
+    //- p.project-p
+    //-     strong Feedback
+    //-     |
+--></div></div><div class="content-container project-container"><h3>Closer Look at Final Solution</h3><p class="project-p">After the full design evolution, here is what I landed on. Each feature aims to tackle on the goals established at the research stage.</p><div class="goals grid-3 flex mt-xxl mb-xl"><div class="grid-3-item left"><p class="bold">Goal 1</p><p class="project-p">Inform citizens about representatives' contact info and political stance.</p></div><div class="grid-3-item middle"><p class="bold">Goal 2</p><p class="project-p">Keep citizens up to date with representatives’ actions and policies.</p></div><div class="grid-3-item right"><p class="bold">Goal 3</p><p class="project-p">Encourage citizens to send frequent, clear, and concise messages.</p></div></div><div class="img-container"><img class="lozad" src="../../static/img/govcontact/deep-dive-rep.png" alt="deep-dive-rep.png"></div><div class="mt-separate"><!--.goals.grid-3.flex.mt-xxl.grid-3-item.left
+    p.bold Goal 1
+    p.project-p Inform citizens about representatives' contact info and political stance.
+.grid-3-item.middle
+    p.bold Goal 2
+    p.project-p Keep citizens up to date with representatives’ actions and policies.
+.grid-3-item.right
+    p.bold Goal 3
+    p.project-p Encourage citizens to send frequent, clear, and concise messages.--><div class="img-container"><img class="lozad" src="../../static/img/govcontact/deep-dive-feed.png" alt="deep-dive-feed.png"></div></div><div class="mt-separate"><div class="img-container"><img class="lozad" src="../../static/img/govcontact/deep-dive-message.png" alt="deep-dive-message.png"></div></div></div><!--.content-container.project-containerh3 Current Solution
+p.project-p.
+    To consider how well my solution would work, I considered the paths that Terry and Briana would take to accomplish their goals.
+    
+    
+//Both need to learn where their representatives stand on the issues. Terry could directly message his state representatives voting on the free tuition bill. 
+//Briana could stay updated with her representatives, message representatives immediately, and share GovContact with her advocacy group.
+//+img("briana-terry-flow.png")
+.grid-2.flex.mt-xl
+    .grid-2-item.pr-xxxl
+        h4 Get To Representatives Quickly
+        p.project-p.
+            The Competitive Analysis showed how long onboarding could be with sign-up processes and political questionaires. 
+            To get citizens like Terry and Briana to their reprentatives faster, the onboarding process has only the essentials to find and message representatives.
+    .grid-2-item
+        +img("onboarding.png")
+.mt-xl
+    h4 Get to Know Your Representatives
+    .grid-3.flex.mt-xl
+        .grid-3-item.pr-xl
+            p.caption-small.m-0.
+                Both Terry and Briana need to know who their representatives are and where they stand on the issues. 
+                As a student, Terry is most interested in Education and Free College Tuition, while as a nurse, Briana cares more about Healthcare.
+        .grid-3-2-item
+            +img("learning-flow.png")
+    +img("learning-flow-2.png")  
+.mt-separate
+    h4 Stay Updated With Representatives and Hold Them Accountable
+    p.project-p.
+        Briana can know what representatives are up to in Political Feed. When she finds a law that she wants to support, Briana can tell representatives why they should pass it.
+    +img("briana-message.png")
+.mt-xl
+    h4 Direct Messaging
+    p.project-p.
+        Terry knows what he wants to say; representatives need to hear how a Free Tuition law would help relieve him of his financial burdens.  
+        He can record a more personal video message to reach them.
+    +img("terry-message.png")
+--><div class="content-container project-container"><h3>Visual Design Language</h3><div class="img-container"><img class="lozad" src="../../static/img/govcontact/visual-design.png" alt="visual-design.png"></div></div><div class="content-container project-container"><h6>conclusion</h6><h3>Summary</h3><div class="grid-2 flex"><div class="grid-2-item pr-xl"><h4>Helping Citizens Communicate with their Representatives</h4><ul><li class="mb-m">Consolidated Representative Info into a central location</li><li class="mb-m"> Representative Profiles contain both contact info and political stance</li><li class="mb-m"> Political Feed allows citizens to stay updated with representatives actions</li><li class="mb-m"> Citizens can message citizens through text, voice, and video</li></ul><!--p.project-p.mt-xl| Play with the the prototype on the right or
+a.bold(href="https://invis.io/WJVH5EF754P") see it on InVision--></div><!--h4 InVision Prototype--><div class="grid-2-item pl-xl"><h4>Final Invision Prototype</h4><p class="project-p mt-xl">Play with the the prototype on the right or<a class="bold" href="https://invis.io/WJVH5EF754P">see it on InVision</a></p><div class="invision-container"><iframe class="lozad" width="442" height="935" data-src="https://invis.io/58VH5ET6XSQ" frameborder="0" allowfullscreen></iframe></div></div></div><h3 class="mt-separate">Challenges and Lessons</h3><h5>Incorporating Different Forms of Research</h5><p class="mb-l"> This was one of the most research-heavy projects I encountered. Civic engagement is a complicated issue that I had to learn about before I could start designing for it. The most effective forms of research were the focus group and government employee interviews. Talking to real people helped me develop a greater sense of empathy of what people needed in a civic engagment app.</p><h5>Consider Visual Design Early On</h5><p class="mb-xxxl">To develop a richer visual language, I started the process early. The goal was to make each design choice have a meaning, which would require a longer period of time to develop.</p><h3 class="mt-separate">Next Steps</h3><h5>Compare Reps Across Issues</h5><p class="mb-l"> Instead of learning about representatives individually, an interesting feature would be to compare all your representative stances based on a political issue.</p><h5>Message History</h5><p class="mb-l"> One the features that would be needed is an inbox feature that citizens could use to keep track of where their messages ended up and if they received a response. Currently GovContact would send an email to citizens that they could continue further correspondence. </p></div><!--.content-container.project-containerh3 Solution Deep Dive
+.grid-3.flex
+    .grid-3-2-item.left
+        h4 Meet Your Reps
+        p.project-p Goal 1: Inform citizens about representative’s contact info and politcal stance
+    .grid-3-item.right
+    h4 Stay Updated with Reps
+    p.project-p Goal 2: Keep up to date with representatives’ actions and policies
+    h4 Message Your Reps
+    p.project-p Goal 3: Encourage citizens to send frequent, clear, and concise messages--><div class="content-container project-container mt-separate"><h3>Final Screens</h3><div class="img-container"><img class="lozad" src="../../static/img/govcontact/results.png" alt="results.png"></div></div><div class="content-container project-container project-extra-padding"><a href="../../"><h3 class="mb-s small-caps">go back to home</h3></a></div></div><footer class="footer"></footer><script type="text/javascript" src="../../main.js"></script></body></html>
