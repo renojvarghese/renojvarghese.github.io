@@ -1,1 +1,48 @@
-<!DOCTYPE html><html lang="en"><head><title>Microinteractions in Chatbots</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Renoj's portfolio"><meta name="author" content="Renoj Varghese"><link href="../main.css" rel="stylesheet"></head><body><!--+nav(nav, topDir)--><div class="content"><div class="content-container"><h1>Microinteractions in Chatbots</h1><h2>More to come</h2><div class="img-container"><img src="../static/img/chatbots/icon.png" alt="icon.png"></div></div></div><footer class="footer"></footer><script type="text/javascript" src="../main.js"></script></body></html>
+<!DOCTYPE html><html lang="en"><head><title>Microinteractions in Chatbots</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Renoj's portfolio"><meta name="author" content="Renoj Varghese"><link href="../main.css" rel="stylesheet"></head><body><!--+nav(nav, topDir)--><div class="content"><div class="content-container"><h1>Microinteractions in Chatbots</h1></div><div class="content-container project-container"><div class="grid-2 flex"><div class="grid-2-item pr-xl"><div class="img-container"><img src="../static/img/chatbots/pizzabot.png" alt="pizzabot.png"></div></div><div class="grid-2-item pl-xl"><h3>Pizzabot</h3><p class="strong">What characteristics would best describe this chatbot?</p><form onSubmit="if (!voted['pizzabot']) { submitData(this, 'pizzabot') } return false;"><ul class="checkbox-list"><li><input type="checkbox" value="foo"><label>foo</label></li><li><input type="checkbox" value="bar"><label>bar</label></li><li><input type="checkbox" value="car"><label>car</label></li></ul><input class="input-btn" type="submit" value="Cast Vote" id="pizzabot-submit"></form></div></div><div class="grid-2 flex mt-separate"><div class="grid-2-item pr-xl"><div class="img-container"><img src="../static/img/chatbots/triviabot.png" alt="triviabot.png"></div></div><div class="grid-2-item pl-xl"><h3>Triviabot</h3><p class="strong">What characteristics would best describe this chatbot?</p><form onSubmit="if (!voted['triviabot']) { submitData(this, 'triviabot') } return false;"><ul class="checkbox-list"><li><input type="checkbox" value="foo"><label>foo</label></li><li><input type="checkbox" value="bar"><label>bar</label></li><li><input type="checkbox" value="car"><label>car</label></li></ul><input class="input-btn" type="submit" value="Cast Vote" id="triviabot-submit"></form></div></div></div></div><footer class="footer"></footer><script type="text/javascript" src="../main.js"></script><script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script><script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-firestore.js"></script><script>var firebaseConfig = {
+    apiKey: "AIzaSyB_nS4lgPfWPJfvvgobYNzAOGZTRgC1b5A",
+    authDomain: "chatbot-interactions-survey.firebaseapp.com",
+    projectId: "chatbot-interactions-survey",
+    storageBucket: "chatbot-interactions-survey.appspot.com",
+    messagingSenderId: "661345202791",
+    appId: "1:661345202791:web:5c4a595e653d6e146c1ac2"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+let db = firebase.firestore();
+
+voted = {
+    pizzabot: false,
+    triviabot: false
+}
+
+function saveToFirebase(doc,bot) {
+    db.collection(bot).add(doc)
+}
+function submitData(form, bot) {
+    let empty = true;
+
+    let doc = {};
+    doc.date = new Date();
+    for (var i = 0; i < form.elements.length - 1; i++) {
+        let input = form.elements[i];
+        if (input.checked) {
+            doc[input.value] = true;
+            empty = false; // not empty if there is a checked box (value of input is true)
+        }
+    }
+
+    if (empty) {
+        return false;
+    }
+    else {
+        voted[bot] = true;
+    }
+
+    console.log(bot);
+    let sbmt_btn = document.getElementById(bot + "-submit");
+    sbmt_btn.value = "Thank You!";
+    sbmt_btn.classList.add("done");
+
+    saveToFirebase(doc, bot);
+    return false;
+}</script></body></html>
